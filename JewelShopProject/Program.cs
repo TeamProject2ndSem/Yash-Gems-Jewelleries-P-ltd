@@ -1,7 +1,12 @@
+using JewelShopProject.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<DbContextJewel>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("Addcon")));
 
 var app = builder.Build();
 
