@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using JewelShopProject.Models;
 
 namespace JewelShopProject.Models
 {
@@ -10,5 +11,6 @@ namespace JewelShopProject.Models
 
         }
         public DbSet<AdminLoginMst> adminLoginMsts { get; set; }
+        public DbSet<JewelShopProject.Models.BrandMst>? BrandMst { get; set; }
     }
 }
