@@ -12,5 +12,6 @@ namespace JewelShopProject.Models
         }
         public DbSet<AdminLoginMst> adminLoginMsts { get; set; }
         public DbSet<JewelShopProject.Models.BrandMst>? BrandMst { get; set; }
+        public DbSet<JewelShopProject.Models.DimInfoMst>? DimInfoMst { get; set; }
     }
 }

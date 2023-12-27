@@ -16,44 +16,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\khanl\source\repos\JewelShopProject\JewelShopProject
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/khanl/source/repos/JewelShopProject/JewelShopProject/Views/AdminLoginMsts/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Mb2dpbk1zdHNcQ3JlYXRlLmNzaHRtbA==
+[C:/Users/khanl/source/repos/JewelShopProject/JewelShopProject/Views/DimInfoMsts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGltSW5mb01zdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khanl/source/repos/JewelShopProject/JewelShopProject/Views/AdminLoginMsts/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Mb2dpbk1zdHNcRGVsZXRlLmNzaHRtbA==
+[C:/Users/khanl/source/repos/JewelShopProject/JewelShopProject/Views/DimInfoMsts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGltSW5mb01zdHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khanl/source/repos/JewelShopProject/JewelShopProject/Views/AdminLoginMsts/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Mb2dpbk1zdHNcRGV0YWlscy5jc2h0bWw=
+[C:/Users/khanl/source/repos/JewelShopProject/JewelShopProject/Views/DimInfoMsts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGltSW5mb01zdHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khanl/source/repos/JewelShopProject/JewelShopProject/Views/AdminLoginMsts/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Mb2dpbk1zdHNcRWRpdC5jc2h0bWw=
+[C:/Users/khanl/source/repos/JewelShopProject/JewelShopProject/Views/DimInfoMsts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGltSW5mb01zdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khanl/source/repos/JewelShopProject/JewelShopProject/Views/AdminLoginMsts/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Mb2dpbk1zdHNcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/khanl/source/repos/JewelShopProject/JewelShopProject/Views/BrandMsts/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRNc3RzXENyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/khanl/source/repos/JewelShopProject/JewelShopProject/Views/BrandMsts/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRNc3RzXERlbGV0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/khanl/source/repos/JewelShopProject/JewelShopProject/Views/BrandMsts/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRNc3RzXERldGFpbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/khanl/source/repos/JewelShopProject/JewelShopProject/Views/BrandMsts/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRNc3RzXEVkaXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/khanl/source/repos/JewelShopProject/JewelShopProject/Views/BrandMsts/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRNc3RzXEluZGV4LmNzaHRtbA==
+[C:/Users/khanl/source/repos/JewelShopProject/JewelShopProject/Views/DimInfoMsts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGltSW5mb01zdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/khanl/source/repos/JewelShopProject/JewelShopProject/Views/Home/Index.cshtml]

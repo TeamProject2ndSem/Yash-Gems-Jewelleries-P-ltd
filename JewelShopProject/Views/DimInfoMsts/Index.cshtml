@@ -1,0 +1,59 @@
+﻿@model IEnumerable<JewelShopProject.Models.DimInfoMst>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DimType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DimSubType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DimCrt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DimPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DimImgPath)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DimType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DimSubType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DimCrt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DimPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DimImgPath)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.DimID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.DimID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.DimID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

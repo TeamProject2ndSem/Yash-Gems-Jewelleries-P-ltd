@@ -8,9 +8,11 @@ namespace JewelShopProject.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly DbContextJewel db;
+        public HomeController(ILogger<HomeController> logger, DbContextJewel db)
         {
             _logger = logger;
+            this.db = db;
         }
 
         public IActionResult Index()
