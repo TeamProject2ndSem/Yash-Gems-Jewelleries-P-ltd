@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PH5mTFx4alGT1kkjip7ImGdSj4nZQOKH4wG1xEmPVxc=",
+  "Hash": "ldE/4u0U9TwgpngIDtYJiMsQ1vTIb7iYwIYo86ZYyD4=",
   "Source": "JewelShopProject",
   "BasePath": "_content/JewelShopProject",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\JewelShopProject.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Content\\Dim\\Dim_Screenshot (11).png",
+      "SourceId": "JewelShopProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\",
+      "BasePath": "_content/JewelShopProject",
+      "RelativePath": "Content/Dim/Dim_Screenshot (11).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Content\\Dim\\Dim_Screenshot (11).png"
     },
     {
       "Identity": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\css\\animate.min.css",

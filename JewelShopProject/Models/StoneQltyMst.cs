@@ -6,7 +6,7 @@ namespace JewelShopProject.Models
     {
         [Key]
         [StringLength(10)]
-        public string StoneQlty_ID { get; set; }
+        public int StoneQlty_ID { get; set; }
 
         [Required]
         [StringLength(50)]

@@ -6,7 +6,7 @@ public class DimMst
 {
     [Key]
     [StringLength(50)]
-    public string Style_Code { get; set; }
+    public int Style_Code { get; set; }
 
     [ForeignKey("DimQltyMst")]
     [StringLength(10)]

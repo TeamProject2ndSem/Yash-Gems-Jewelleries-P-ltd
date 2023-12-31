@@ -6,7 +6,7 @@ namespace JewelShopProject.Models
     {
         [Key]
         [StringLength(10)]
-        public string Cat_ID { get; set; }
+        public int Cat_ID { get; set; }
 
         [Required]
         [StringLength(50)]

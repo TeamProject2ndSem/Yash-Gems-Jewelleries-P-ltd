@@ -6,7 +6,7 @@ namespace JewelShopProject.Models
     {
         [Key]
         [StringLength(10)]
-        public string userID { get; set; }
+        public int userID { get; set; }
 
         [Required]
         [MaxLength]

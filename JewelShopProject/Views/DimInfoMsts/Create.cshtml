@@ -1,4 +1,4 @@
-﻿@model JewelShopProject.Models.DimInfoMst
+﻿@model JewelShopProject.Models.Image.ImageDim
 
 @{
     ViewData["Title"] = "Create";
@@ -10,13 +10,10 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <p>@ViewBag.sucess</p>
+        <form asp-controller="DimInfoMsts" asp-action="Create" method="post" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="DimID" class="control-label"></label>
-                <input asp-for="DimID" class="form-control" />
-                <span asp-validation-for="DimID" class="text-danger"></span>
-            </div>
+
             <div class="form-group">
                 <label asp-for="DimType" class="control-label"></label>
                 <input asp-for="DimType" class="form-control" />
@@ -37,10 +34,9 @@
                 <input asp-for="DimPrice" class="form-control" />
                 <span asp-validation-for="DimPrice" class="text-danger"></span>
             </div>
-                       <div class="form-group">
-                <label asp-for="DimImgFile" class="control-label"></label>
-                <input asp-for="DimImgFile" type="file" class="form-control" />
-                <span asp-validation-for="DimImgFile" class="text-danger"></span>
+            <div class="form-group">
+                <td>Select Image</td>
+                <input type="file" asp-for="DimImgPath" class="form-control" />
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
@@ -53,6 +49,5 @@
     <a asp-action="Index">Back to List</a>
 </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+
+

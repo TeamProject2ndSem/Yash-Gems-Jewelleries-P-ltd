@@ -45,8 +45,8 @@
             <td>
                 @Html.DisplayFor(modelItem => item.DimPrice)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DimImgPath)
+           <td>
+                    <img src="../Content/Dim/@Html.DisplayFor(modelItem => item.DimImgPath)" style="width:100px; height:100px"  />
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.DimID">Edit</a> |

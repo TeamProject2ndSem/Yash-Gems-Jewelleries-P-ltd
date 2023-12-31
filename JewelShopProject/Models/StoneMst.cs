@@ -8,11 +8,11 @@ namespace JewelShopProject.Models
     {
         [Key]
         [StringLength(50)]
-        public string Style_Code { get; set; }
+        public int Style_Code { get; set; }
 
         [ForeignKey("StoneQltyMst")]
         [StringLength(10)]
-        public string StoneQlty_ID { get; set; }
+        public int StoneQlty_ID { get; set; }
 
         [Required]
         [Column(TypeName = "numeric(10,2)")]

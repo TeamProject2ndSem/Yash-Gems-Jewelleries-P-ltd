@@ -1,0 +1,42 @@
+﻿@model JewelShopProject.Models.Image.ImageDim
+@{
+    ViewData["Title"] = "AddProduct";
+}
+
+
+<div class="tile">
+    <h3 class="tile-title">Add New Product </h3>
+    <form asp-controller="Pic" asp-action="Create" method="post" enctype="multipart/form-data">
+        <table class="table">
+            <tr>
+                <td>type</td>
+                <td><input type="text" asp-for="DimType" class="form-control" /></td>
+            </tr>
+            <tr>
+                <td>sub-type</td>
+                <td><input type="text" asp-for="DimSubType" class="form-control" /></td>
+            </tr>
+            <tr>
+                <td>crt</td>
+                <td><input type="text" asp-for="DimCrt" class="form-control" /></td>
+            </tr>
+
+            <tr>
+                <td>pp</td>
+                <td><input type="text" asp-for="DimPrice" class="form-control" /></td>
+            </tr>
+
+            <tr>
+                <td>Select Image</td>
+                <td><input type="file" asp-for="DimImgPath" class="form-control" /></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><input type="submit" class="btn btn-primary" /></td>
+            </tr>
+
+        </table>
+    </form>
+
+</div>

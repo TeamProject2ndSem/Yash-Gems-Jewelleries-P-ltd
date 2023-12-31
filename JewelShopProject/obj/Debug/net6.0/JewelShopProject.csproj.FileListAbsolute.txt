@@ -11,7 +11,6 @@ C:\Users\khanl\source\repos\JewelShopProject\JewelShopProject\obj\Debug\net6.0\J
 C:\Users\khanl\source\repos\JewelShopProject\JewelShopProject\obj\Debug\net6.0\JewelShopProject.AssemblyInfoInputs.cache
 C:\Users\khanl\source\repos\JewelShopProject\JewelShopProject\obj\Debug\net6.0\JewelShopProject.AssemblyInfo.cs
 C:\Users\khanl\source\repos\JewelShopProject\JewelShopProject\obj\Debug\net6.0\JewelShopProject.csproj.CoreCompileInputs.cache
-C:\Users\khanl\source\repos\JewelShopProject\JewelShopProject\obj\Debug\net6.0\JewelShopProject.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\khanl\source\repos\JewelShopProject\JewelShopProject\obj\Debug\net6.0\JewelShopProject.RazorAssemblyInfo.cache
 C:\Users\khanl\source\repos\JewelShopProject\JewelShopProject\obj\Debug\net6.0\JewelShopProject.RazorAssemblyInfo.cs
 C:\Users\khanl\source\repos\JewelShopProject\JewelShopProject\obj\Debug\net6.0\staticwebassets\msbuild.JewelShopProject.Microsoft.AspNetCore.StaticWebAssets.props

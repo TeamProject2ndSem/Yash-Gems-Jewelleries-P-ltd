@@ -8,7 +8,7 @@ namespace JewelShopProject.Models
     {
         [Key]
         [StringLength(10)]
-        public string ID { get; set; }
+        public int ID { get; set; }
 
         [Required]
         [StringLength(50)]

@@ -4,7 +4,7 @@ public class DimQltySubMst
 {
     [Key]
     [StringLength(10)]
-    public string DimSubType_ID { get; set; }
+    public int DimSubType_ID { get; set; }
 
     [Required]
     [StringLength(50)]

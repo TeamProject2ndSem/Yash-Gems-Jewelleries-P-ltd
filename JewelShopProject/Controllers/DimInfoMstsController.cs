@@ -6,41 +6,43 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using JewelShopProject.Models;
-using Microsoft.AspNetCore.Routing.Constraints;
 using Microsoft.Extensions.Hosting;
+using JewelShopProject.Models.Image;
+using Microsoft.Extensions.Hosting.Internal;
 
 namespace JewelShopProject.Controllers
 {
     public class DimInfoMstsController : Controller
     {
-        private readonly DbContextJewel _context;
-        private readonly IWebHostEnvironment webHostEnvironment;
+
+        private readonly DbContextJewel db;
+        private readonly Microsoft.AspNetCore.Hosting.IHostingEnvironment environment;
         private readonly ILogger<DimInfoMstsController> logger;
 
-        public DimInfoMstsController(ILogger<DimInfoMstsController> logger,DbContextJewel context,IWebHostEnvironment webHostEnvironment)
+        public DimInfoMstsController(DbContextJewel db, Microsoft.AspNetCore.Hosting.IHostingEnvironment environment, ILogger<DimInfoMstsController> logger)
         {
-            logger = logger;
-            _context = context;
-            webHostEnvironment = webHostEnvironment;
+            this.db = db;
+            this.environment = environment;
+            this.logger = logger;
         }
 
         // GET: DimInfoMsts
         public async Task<IActionResult> Index()
         {
-              return _context.DimInfoMst != null ? 
-                          View(await _context.DimInfoMst.ToListAsync()) :
+              return db.DimInfoMst != null ? 
+                          View(await db.DimInfoMst.ToListAsync()) :
                           Problem("Entity set 'DbContextJewel.DimInfoMst'  is null.");
         }
 
         // GET: DimInfoMsts/Details/5
-        public async Task<IActionResult> Details(string id)
+        public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.DimInfoMst == null)
+            if (id == null || db.DimInfoMst == null)
             {
                 return NotFound();
             }
 
-            var dimInfoMst = await _context.DimInfoMst
+            var dimInfoMst = await db.DimInfoMst
                 .FirstOrDefaultAsync(m => m.DimID == id);
             if (dimInfoMst == null)
             {
@@ -61,49 +63,44 @@ namespace JewelShopProject.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("DimID,DimType,DimSubType,DimCrt,DimPrice,DimImgFileDimImgFile,DimImgPath")] DimInfoMst dimInfoMst)
+        public IActionResult Create(ImageDim model)
         {
-            string fileName = null;
-            if (ModelState.IsValid)
-            {
-                //string upload = Path.Combine(webHostEnvironment.WebRootPath, "Content");
-                //fileName=Guid.NewGuid().ToString()+"-"+ dimInfoMst.DimImgFile.FileName;
-                //string filePath = Path.Combine(upload,fileName);
+          
+                String filename = "";
+                if (model.DimImgPath != null)
+                {
+                    string uploadFolder = Path.Combine(environment.WebRootPath, "Content/Dim/");
+                    filename = "Dim_" + model.DimImgPath.FileName;
+                    string filepath = Path.Combine(uploadFolder, filename);
+                    model.DimImgPath.CopyTo(new FileStream(filepath, FileMode.Create));
 
-                //using(var filestream = new FileStream(filePath, FileMode.Create)) 
-                //{
-                //dimInfoMst.DimImgFile.CopyTo(filestream);
 
-                //}
-                var path = webHostEnvironment.WebRootPath;
-                var filepath = "Content" + dimInfoMst.DimImgFile.FileName;
-                var fullpath = Path.Combine(path, filepath);
-
-                UploadFile(dimInfoMst.DimImgFile, fullpath);
+                }
                 var data = new DimInfoMst()
-                { DimID = dimInfoMst.DimID,
-                DimType     = dimInfoMst.DimType,
-                DimSubType  = dimInfoMst.DimSubType,
-                DimCrt = dimInfoMst.DimCrt,
-                DimPrice    = dimInfoMst.DimPrice,
-                    DimImgPath = path };
+                {
+                    DimType = model.DimType,
+                    DimSubType = model.DimSubType,
+                    DimCrt = model.DimCrt,
+                    DimPrice = model.DimPrice,
+                    DimImgPath = filename,
 
-                _context.Add(dimInfoMst);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(dimInfoMst);
+                };
+                db.DimInfoMst.Add(data);
+                db.SaveChanges();
+                ViewBag.sucess = "Record added";
+                return View("Index");
+
         }
 
         // GET: DimInfoMsts/Edit/5
-        public async Task<IActionResult> Edit(string id)
+        public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.DimInfoMst == null)
+            if (id == null || db.DimInfoMst == null)
             {
                 return NotFound();
             }
 
-            var dimInfoMst = await _context.DimInfoMst.FindAsync(id);
+            var dimInfoMst = await db.DimInfoMst.FindAsync(id);
             if (dimInfoMst == null)
             {
                 return NotFound();
@@ -116,7 +113,7 @@ namespace JewelShopProject.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("DimID,DimType,DimSubType,DimCrt,DimPrice,DimImgPath")] DimInfoMst dimInfoMst)
+        public async Task<IActionResult> Edit(int id, [Bind("DimID,DimType,DimSubType,DimCrt,DimPrice,DimImgPath")] DimInfoMst dimInfoMst)
         {
             if (id != dimInfoMst.DimID)
             {
@@ -127,8 +124,8 @@ namespace JewelShopProject.Controllers
             {
                 try
                 {
-                    _context.Update(dimInfoMst);
-                    await _context.SaveChangesAsync();
+                    db.Update(dimInfoMst);
+                    await db.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -147,14 +144,14 @@ namespace JewelShopProject.Controllers
         }
 
         // GET: DimInfoMsts/Delete/5
-        public async Task<IActionResult> Delete(string id)
+        public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.DimInfoMst == null)
+            if (id == null || db.DimInfoMst == null)
             {
                 return NotFound();
             }
 
-            var dimInfoMst = await _context.DimInfoMst
+            var dimInfoMst = await db.DimInfoMst
                 .FirstOrDefaultAsync(m => m.DimID == id);
             if (dimInfoMst == null)
             {
@@ -167,30 +164,25 @@ namespace JewelShopProject.Controllers
         // POST: DimInfoMsts/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(string id)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.DimInfoMst == null)
+            if (db.DimInfoMst == null)
             {
                 return Problem("Entity set 'DbContextJewel.DimInfoMst'  is null.");
             }
-            var dimInfoMst = await _context.DimInfoMst.FindAsync(id);
+            var dimInfoMst = await db.DimInfoMst.FindAsync(id);
             if (dimInfoMst != null)
             {
-                _context.DimInfoMst.Remove(dimInfoMst);
+                db.DimInfoMst.Remove(dimInfoMst);
             }
             
-            await _context.SaveChangesAsync();
+            await db.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool DimInfoMstExists(string id)
+        private bool DimInfoMstExists(int id)
         {
-          return (_context.DimInfoMst?.Any(e => e.DimID == id)).GetValueOrDefault();
-        }
-         public void UploadFile(IFormFile file, string path)
-        {
-            FileStream fileStream = new FileStream(path, FileMode.Create);
-            file.CopyTo(fileStream);
+          return (db.DimInfoMst?.Any(e => e.DimID == id)).GetValueOrDefault();
         }
     }
 }
