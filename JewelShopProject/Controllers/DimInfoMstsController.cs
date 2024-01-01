@@ -124,6 +124,9 @@ namespace JewelShopProject.Controllers
             {
                 try
                 {
+
+                   
+
                     db.Update(dimInfoMst);
                     await db.SaveChangesAsync();
                 }

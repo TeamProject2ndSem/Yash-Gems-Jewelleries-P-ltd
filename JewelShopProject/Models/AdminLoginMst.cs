@@ -6,10 +6,19 @@ namespace JewelShopProject.Models
     {
         [Key]
         public int AdId { get; set; }
-        [Required]
-        public string username { get; set; }
-        [Required]
-        public string password { get; set; }
 
+        [Required]
+        public string Username { get; set; }
+
+        [Required]
+        public string Password { get; set; }
+
+        public string UserRole { get; set; }
+
+        public AdminLoginMst()
+        {
+            // Set default value for UserRole
+            UserRole = "Admin";
+        }
     }
 }
