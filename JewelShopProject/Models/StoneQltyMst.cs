@@ -5,7 +5,6 @@ namespace JewelShopProject.Models
     public class StoneQltyMst
     {
         [Key]
-        [StringLength(10)]
         public int StoneQlty_ID { get; set; }
 
         [Required]

@@ -5,7 +5,6 @@ namespace JewelShopProject.Models
     public class BrandMst
     {
         [Key]
-        [StringLength(10)]
         public int Brand_ID { get; set; }
 
         [Required]

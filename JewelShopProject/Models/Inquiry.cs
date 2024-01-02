@@ -5,7 +5,7 @@ namespace JewelShopProject.Models
     public class Inquiry
     {
         [Key]
-        [StringLength(10)]
+        
         public int ID { get; set; }
 
         [Required]

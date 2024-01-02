@@ -7,7 +7,6 @@ namespace JewelShopProject.Models
     public class CartList
     {
         [Key]
-        [StringLength(10)]
         public int ID { get; set; }
 
         [Required]

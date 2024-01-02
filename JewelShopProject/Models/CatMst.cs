@@ -5,7 +5,6 @@ namespace JewelShopProject.Models
     public class CatMst
     {
         [Key]
-        [StringLength(10)]
         public int Cat_ID { get; set; }
 
         [Required]

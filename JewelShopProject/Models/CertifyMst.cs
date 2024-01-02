@@ -5,7 +5,6 @@ namespace JewelShopProject.Models
     public class CertifyMst
     {
         [Key]
-        [StringLength(10)]
         public int Certify_ID { get; set; }
 
         [Required]

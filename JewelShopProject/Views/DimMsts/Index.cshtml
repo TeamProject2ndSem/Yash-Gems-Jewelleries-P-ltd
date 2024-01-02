@@ -1,0 +1,77 @@
+﻿@model IEnumerable<DimMst>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DimQlty_ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DimQltyMst_ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dim_Crt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dim_Pcs)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dim_Gm)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dim_Size)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dim_Rate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dim_Amt)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DimQlty_ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DimQltyMst_ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dim_Crt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dim_Pcs)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dim_Gm)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dim_Size)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dim_Rate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dim_Amt)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Style_Code">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Style_Code">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Style_Code">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

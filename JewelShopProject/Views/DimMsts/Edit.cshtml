@@ -1,0 +1,69 @@
+﻿@model DimMst
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>DimMst</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Style_Code" />
+            <div class="form-group">
+                <label asp-for="DimQlty_ID" class="control-label"></label>
+                <input asp-for="DimQlty_ID" class="form-control" />
+                <span asp-validation-for="DimQlty_ID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DimQltyMst_ID" class="control-label"></label>
+                <input asp-for="DimQltyMst_ID" class="form-control" />
+                <span asp-validation-for="DimQltyMst_ID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dim_Crt" class="control-label"></label>
+                <input asp-for="Dim_Crt" class="form-control" />
+                <span asp-validation-for="Dim_Crt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dim_Pcs" class="control-label"></label>
+                <input asp-for="Dim_Pcs" class="form-control" />
+                <span asp-validation-for="Dim_Pcs" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dim_Gm" class="control-label"></label>
+                <input asp-for="Dim_Gm" class="form-control" />
+                <span asp-validation-for="Dim_Gm" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dim_Size" class="control-label"></label>
+                <input asp-for="Dim_Size" class="form-control" />
+                <span asp-validation-for="Dim_Size" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dim_Rate" class="control-label"></label>
+                <input asp-for="Dim_Rate" class="form-control" />
+                <span asp-validation-for="Dim_Rate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dim_Amt" class="control-label"></label>
+                <input asp-for="Dim_Amt" class="form-control" />
+                <span asp-validation-for="Dim_Amt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -20,7 +20,7 @@ namespace JewelShopProject.Models
         public DbSet<CertifyMst> certifyMsts{ get; set; }
         public DbSet<DimMst> dimMsts{ get; set; }
 
-        public DbSet<DimQltySubMst> dimQltySubMsts{ get; set; }
+        public DbSet<DimQltyMst> dimQltySubMsts{ get; set; }
         public DbSet<GoldKrtMst> goldKrtMsts{ get; set; }
         public DbSet<Inquiry> inquiries{ get; set; }
         //public DbSet<ItemMst> itemMsts{ get; set; }

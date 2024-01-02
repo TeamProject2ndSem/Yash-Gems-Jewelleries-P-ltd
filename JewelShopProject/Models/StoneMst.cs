@@ -7,7 +7,6 @@ namespace JewelShopProject.Models
     public class StoneMst
     {
         [Key]
-        [StringLength(50)]
         public int Style_Code { get; set; }
 
         [ForeignKey("StoneQltyMst")]

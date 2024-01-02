@@ -55,27 +55,10 @@ namespace JewelShopProject.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create( UserRegMst userRegMst)
+        public async Task<IActionResult> Create([Bind("userID,Username,userFname,userLname,address,city,state,mobNo,emailID,dob,cdate,Password,UserRole")] UserRegMst userRegMst)
         {
             if (ModelState.IsValid)
             {
-                var data = new UserRegMst()
-                {
-                    
-                    userFname= userRegMst.userFname,
-
-                    userLname= userRegMst.userLname,
-
-                    address= userRegMst.address,
-
-                    city = userRegMst.city
-                    ,state = userRegMst.state
-                    ,mobNo = userRegMst.mobNo,
-                    emailID = userRegMst.emailID,
-                    dob = userRegMst.dob,
-                    cdate = userRegMst.cdate,
-                    password = userRegMst.password
-                };
                 _context.Add(userRegMst);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -104,7 +87,7 @@ namespace JewelShopProject.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("userID,userFname,userLname,address,city,state,mobNo,emailID,dob,cdate,password")] UserRegMst userRegMst)
+        public async Task<IActionResult> Edit(int id, [Bind("userID,Username,userFname,userLname,address,city,state,mobNo,emailID,dob,cdate,Password,UserRole")] UserRegMst userRegMst)
         {
             if (id != userRegMst.userID)
             {

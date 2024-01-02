@@ -7,6 +7,8 @@ namespace JewelShopProject.Models
         [Key]
         public int userID { get; set; }
 
+        public string Username { get; set; }
+
         [Required]
         [MaxLength]
         public string userFname { get; set; }
@@ -45,11 +47,14 @@ namespace JewelShopProject.Models
 
         [Required]
         [StringLength(50)]
-        public string password { get; set; }
+        public string Password { get; set; }
+
+        public string UserRole { get; set; }
         public UserRegMst()
         {
             // Set cdate to the current date when an instance is created
             cdate  = DateTime.Now.ToString("yyyy-MM-dd"); // Adjust the format as needed
+            UserRole = "User";
         }
     }
 

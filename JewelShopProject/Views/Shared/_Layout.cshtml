@@ -9,27 +9,89 @@
     <link rel="stylesheet" href="~/checking.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Jewel</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="logo">
+                <h1><a href="~/Views/Home/Index.cshtml">Art-Gallery</a></h1>
             </div>
-        </nav>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+
+                    <li>@Html.ActionLink("Home", "Index", "Home") </li>
+                    <li class="dropdown">
+                        <a href="#">
+                            <span>About</span> <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul>
+                            <li> @Html.ActionLink("Journey", "Journey", "Home")</li>
+                            <li>@Html.ActionLink("Vision & Mission", "visionnMission", "Home")</li>
+                            <li>@Html.ActionLink("Privacy Policy", "PrivacynPolicy", "Home")</li>
+                        </ul>
+                    </li>
+                    <li> @Html.ActionLink("ArtInSale", "ArtInSale", "Home")</li>
+
+                    <li> @Html.ActionLink("Contact", "Contact", "Home")</li>
+
+
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <li class="dropdown">
+                            <a href="#">
+                                <span>Admin Activities</span> <i class="bi bi-chevron-down"></i>
+                            </a>
+                            <ul>
+                                @*TO Diplay Table Of Images/Post's*@
+                                <li> @Html.ActionLink("Uploaded Art", "Index", "Artdetails")</li>
+                                <li>
+                                    @*Used to Add Image For Post With Details*@
+                                    @Html.ActionLink("Add-Post", "Editimage", "inibuyers")
+                                </li>
+                                <li>
+                                    @*It Will Show All The User Accounts*@
+                                    @Html.ActionLink("BuyersAccounts", "Index", "inibuyers")
+                                </li>
+                            </ul>
+                        </li>
+                        //Logout details
+                        <li>@Html.ActionLink("Logout", "Logout", "AccountsManagement")</li>
+                    }
+                    else if (User.IsInRole("Buyer"))
+                    {/*Section IS AUTHORIZED FOR BUYERS*/
+
+
+                        <li>
+                            @*DETAILS OF BUYER*@
+                            @Html.ActionLink("Personal Details", "PersonalDe", "Home")
+                        </li>
+                //LOGOUT
+                        <li>@Html.ActionLink("Logout", "Logout", "AccountsManagement")</li>
+
+                    }
+                    else if (User.IsInRole("Artist"))
+                    {
+                //LOGOUT
+                        <li>@Html.ActionLink("Logout", "Logout", "AccountsManagement")</li>
+                    }
+                    else
+                    {
+                        //lOGIN
+                        <li>@Html.ActionLink("Login", "Login", "AccountsManagement")</li>
+                    }
+
+
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+        </div>
+
     </header>
+    <!-- End Header -->
+
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()

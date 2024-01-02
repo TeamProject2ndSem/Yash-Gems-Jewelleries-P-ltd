@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace JewelShopProject.Migrations
 {
-    public partial class initial : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -28,7 +28,7 @@ namespace JewelShopProject.Migrations
                 name: "BrandMst",
                 columns: table => new
                 {
-                    Brand_ID = table.Column<int>(type: "int", maxLength: 10, nullable: false)
+                    Brand_ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Brand_Type = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
                 },
@@ -41,7 +41,7 @@ namespace JewelShopProject.Migrations
                 name: "cartLists",
                 columns: table => new
                 {
-                    ID = table.Column<int>(type: "int", maxLength: 10, nullable: false)
+                    ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Product_Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     MRP = table.Column<decimal>(type: "numeric(10,2)", nullable: false)
@@ -55,7 +55,7 @@ namespace JewelShopProject.Migrations
                 name: "catMsts",
                 columns: table => new
                 {
-                    Cat_ID = table.Column<int>(type: "int", maxLength: 10, nullable: false)
+                    Cat_ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Cat_Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
                 },
@@ -68,7 +68,7 @@ namespace JewelShopProject.Migrations
                 name: "certifyMsts",
                 columns: table => new
                 {
-                    Certify_ID = table.Column<int>(type: "int", maxLength: 10, nullable: false)
+                    Certify_ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Certify_Type = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
                 },
@@ -98,10 +98,10 @@ namespace JewelShopProject.Migrations
                 name: "dimMsts",
                 columns: table => new
                 {
-                    Style_Code = table.Column<int>(type: "int", maxLength: 50, nullable: false)
+                    Style_Code = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     DimQlty_ID = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
-                    DimSubType_ID = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
+                    DimQltyMst_ID = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
                     Dim_Crt = table.Column<decimal>(type: "numeric(10,2)", nullable: false),
                     Dim_Pcs = table.Column<decimal>(type: "numeric(10,2)", nullable: false),
                     Dim_Gm = table.Column<decimal>(type: "numeric(10,2)", nullable: false),
@@ -118,13 +118,13 @@ namespace JewelShopProject.Migrations
                 name: "dimQltySubMsts",
                 columns: table => new
                 {
-                    DimSubType_ID = table.Column<int>(type: "int", maxLength: 10, nullable: false)
+                    DimQltyMst_ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     DimQlty = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_dimQltySubMsts", x => x.DimSubType_ID);
+                    table.PrimaryKey("PK_dimQltySubMsts", x => x.DimQltyMst_ID);
                 });
 
             migrationBuilder.CreateTable(
@@ -144,7 +144,7 @@ namespace JewelShopProject.Migrations
                 name: "inquiries",
                 columns: table => new
                 {
-                    ID = table.Column<int>(type: "int", maxLength: 10, nullable: false)
+                    ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     City = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
@@ -175,7 +175,7 @@ namespace JewelShopProject.Migrations
                 name: "prodMsts",
                 columns: table => new
                 {
-                    Prod_ID = table.Column<int>(type: "int", maxLength: 10, nullable: false)
+                    Prod_ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Prod_Type = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
                 },
@@ -188,7 +188,7 @@ namespace JewelShopProject.Migrations
                 name: "StoneQltyMst",
                 columns: table => new
                 {
-                    StoneQlty_ID = table.Column<int>(type: "int", maxLength: 10, nullable: false)
+                    StoneQlty_ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     StoneQlty = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
                 },
@@ -201,8 +201,9 @@ namespace JewelShopProject.Migrations
                 name: "userRegMsts",
                 columns: table => new
                 {
-                    userID = table.Column<int>(type: "int", maxLength: 10, nullable: false)
+                    userID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    Username = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     userFname = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     userLname = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     address = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -212,7 +213,8 @@ namespace JewelShopProject.Migrations
                     emailID = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     dob = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     cdate = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    password = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
+                    Password = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    UserRole = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -223,7 +225,7 @@ namespace JewelShopProject.Migrations
                 name: "stoneMsts",
                 columns: table => new
                 {
-                    Style_Code = table.Column<int>(type: "int", maxLength: 50, nullable: false)
+                    Style_Code = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     StoneQlty_ID = table.Column<int>(type: "int", maxLength: 10, nullable: false),
                     Stone_Gm = table.Column<decimal>(type: "numeric(10,2)", nullable: false),
