@@ -43,8 +43,8 @@ namespace JewelShopProject.Migrations
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Product_Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    MRP = table.Column<decimal>(type: "numeric(10,2)", nullable: false)
+                    Product_Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    MRP = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -57,7 +57,7 @@ namespace JewelShopProject.Migrations
                 {
                     Cat_ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Cat_Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
+                    Cat_Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -70,7 +70,7 @@ namespace JewelShopProject.Migrations
                 {
                     Certify_ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Certify_Type = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
+                    Certify_Type = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -156,6 +156,38 @@ namespace JewelShopProject.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_inquiries", x => x.ID);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "itemMsts",
+                columns: table => new
+                {
+                    Style_Code = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Pairs = table.Column<int>(type: "int", nullable: false),
+                    Brand_ID = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
+                    Quantity = table.Column<int>(type: "int", nullable: false),
+                    Cat_ID = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
+                    Prod_Quality = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Certify_ID = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Prod_ID = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
+                    GoldType_ID = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
+                    Gold_Wt = table.Column<int>(type: "int", nullable: false),
+                    Stone_Wt = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Net_Gold = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Wstg_Per = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Wstg = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Tot_Gross_Wt = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Gold_Rate = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Gold_Amt = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Gold_Making = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Stone_Making = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Other_Making = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Tot_Making = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    MRP = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_itemMsts", x => x.Style_Code);
                 });
 
             migrationBuilder.CreateTable(
@@ -282,6 +314,9 @@ namespace JewelShopProject.Migrations
 
             migrationBuilder.DropTable(
                 name: "inquiries");
+
+            migrationBuilder.DropTable(
+                name: "itemMsts");
 
             migrationBuilder.DropTable(
                 name: "jewelTypeMsts");

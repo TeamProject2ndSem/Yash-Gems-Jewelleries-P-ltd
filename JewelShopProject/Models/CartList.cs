@@ -10,12 +10,10 @@ namespace JewelShopProject.Models
         public int ID { get; set; }
 
         [Required]
-        [StringLength(50)]
         public string Product_Name { get; set; }
 
         [Required]
-        [Column(TypeName = "numeric(10,2)")]
-        public decimal MRP { get; set; }
+        public string MRP { get; set; }
     }
 
 }
