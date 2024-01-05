@@ -1,39 +1,113 @@
 ﻿@model JewelShopProject.Models.AdminLoginMst
 
-@{
-    ViewData["Title"] = "Delete";
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"] - Luxe Gold Jewelry</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-<h1>Delete</h1>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5; /* Light gray */
+            color: #333;
+            margin: 20px;
+        }
 
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>AdminLoginMst</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Username)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Username)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Password)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Password)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UserRole)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.UserRole)
-        </dd>
-    </dl>
-    
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="AdId" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
-    </form>
-</div>
+        h1 {
+            color: #2d2d2d; /* Dark gray */
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            color: #2d2d2d; /* Dark gray */
+            font-weight: normal;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .row {
+            margin-bottom: 20px;
+        }
+
+        dt {
+            font-weight: bold;
+            color: #2d2d2d; /* Dark gray */
+        }
+
+        dd {
+            margin-left: 0;
+            color: #333; /* Darker gray */
+        }
+
+        .btn-danger {
+            color: #fff;
+            background-color: #D4AF37; /* Gold */
+            border-color: #D4AF37; /* Gold */
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+            .btn-danger:hover {
+                background-color: #b38927; /* Darker Gold */
+                border-color: #b38927; /* Darker Gold */
+            }
+
+        a {
+            color: #D4AF37; /* Gold */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+            a:hover {
+                color: #b38927; /* Darker Gold */
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Delete</h1>
+        <h3>Are you sure you want to delete this?</h3>
+        <div>
+            <h4>AdminLoginMst</h4>
+            <hr />
+            <dl class="row">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Username)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Username)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Password)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Password)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.UserRole)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.UserRole)
+                </dd>
+            </dl>
+
+            <form asp-action="Delete">
+                <input type="hidden" asp-for="AdId" />
+                <input type="submit" value="Delete" class="btn btn-danger" /> |
+                <a asp-action="Index">Back to List</a>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>

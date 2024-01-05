@@ -1,47 +1,120 @@
 ﻿@model IEnumerable<JewelShopProject.Models.AdminLoginMst>
 
-@{
-    ViewData["Title"] = "Index";
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"] - Luxe Gold Jewelry</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-<h1>Index</h1>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5; /* Light gray */
+            color: #333;
+            margin: 20px;
+        }
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Username)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Password)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UserRole)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Username)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Password)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UserRole)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.AdId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.AdId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.AdId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+        h1 {
+            color: #2d2d2d; /* Dark gray */
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #f7f7f7;
+            color: #704214; /* Gold */
+            font-weight: bold;
+            border-top: 3px solid #D4AF37; /* Gold */
+        }
+
+        .btn {
+            color: #fff;
+            background-color: #D4AF37; /* Gold */
+            border-color: #D4AF37; /* Gold */
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+            .btn:hover {
+                background-color: #b38927; /* Darker Gold */
+                border-color: #b38927; /* Darker Gold */
+            }
+
+        a {
+            color: #D4AF37; /* Gold */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+            a:hover {
+                color: #b38927; /* Darker Gold */
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Luxe Gold Jewelry</h1>
+        <p>
+            <a asp-action="Create" class="btn">Create New</a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Username)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Password)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.UserRole)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Username)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Password)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.UserRole)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.AdId">Edit</a> |
+                            <a asp-action="Details" asp-route-id="@item.AdId">Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.AdId">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>
