@@ -8,7 +8,6 @@ namespace JewelShopProject.Models
         public int Prod_ID { get; set; }
 
         [Required]
-        [StringLength(50)]
         public string Prod_Type { get; set; }
     }
 

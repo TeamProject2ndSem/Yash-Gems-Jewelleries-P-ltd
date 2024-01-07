@@ -28,6 +28,7 @@ namespace JewelShopProject.Models
         public DbSet<UserRegMst> userRegMsts { get; set; }
         public DbSet<ItemMst> itemMsts { get; set; }
         public DbSet<JewelShopProject.Models.StoneQltyMst>? StoneQltyMst { get; set; }
+        public DbSet<JewelShopProject.Models.Login>? Login { get; set; }
 
     }
 }

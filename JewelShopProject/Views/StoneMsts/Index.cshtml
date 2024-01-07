@@ -13,6 +13,9 @@
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.StoneQlty_ID)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Stone_Gm)
             </th>
             <th>
@@ -36,6 +39,9 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StoneQlty_ID)
+                </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Stone_Gm)
             </td>

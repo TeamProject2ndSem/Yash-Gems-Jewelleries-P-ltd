@@ -22,7 +22,9 @@ namespace JewelShopProject.Controllers
         // GET: AdminLoginMsts
         public async Task<IActionResult> Index()
         {
-              return _context.adminLoginMsts != null ? 
+            var AdminSession = TempData["AdminSession"];
+            TempData.Keep("AdminSession");
+            return _context.adminLoginMsts != null ? 
                           View(await _context.adminLoginMsts.ToListAsync()) :
                           Problem("Entity set 'DbContextJewel.adminLoginMsts'  is null.");
         }
@@ -45,7 +47,11 @@ namespace JewelShopProject.Controllers
             return View(adminLoginMst);
         }
 
+
+
+
         // GET: AdminLoginMsts/Create
+        
         public IActionResult Create()
         {
             return View();

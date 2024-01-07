@@ -9,37 +9,45 @@ namespace JewelShopProject.Models
     public class ItemMst
     {
         [Key]
-        public string Style_Code { get; set; } // Code Of Style
+        public int Style_Code { get; set; } // Code Of Style
 
         [System.ComponentModel.DataAnnotations.Required]
         public int Pairs { get; set; } // Pairs Of Product
 
         [StringLength(10)]
         [ForeignKey("Brand")]
-        public string Brand_ID { get; set; } // ID Of Particular Brand
+        public int Brand_ID { get; set; } // ID Of Particular Brand
+
+        public BrandMst BrandMst { get; set; }
 
         [System.ComponentModel.DataAnnotations.Required]
         public int Quantity { get; set; } // Available Quantity
 
-        [StringLength(10)]
-        [ForeignKey("catMsts")]
-        public string Cat_ID { get; set; } // ID Of Category
+        [ForeignKey("CatMst")]
+        public int Cat_ID { get; set; } // ID Of Category
+
+        public CatMst CatMst { get; set; }
 
         [System.ComponentModel.DataAnnotations.Required]
         public string Prod_Quality { get; set; } // Quality Of Product
 
-        [ForeignKey("certifyMsts")]
-        public string Certify_ID { get; set; } // ID Of Certification
+        [ForeignKey("CertifyMst")]
+        public int Certify_ID { get; set; } // ID Of Certification
 
-        [StringLength(10)]
-        [ForeignKey("prodMsts")]
-        public string Prod_ID { get; set; } // Product ID
+        public CertifyMst CertifyMst { get; set; }
 
-        [StringLength(10)]
-        [ForeignKey("goldKrtMsts")]
-        public string GoldType_ID { get; set; } // ID Of Gold Type
+        [ForeignKey("ProdMst")]
+        public int Prod_ID { get; set; } // Product ID
 
-                [System.ComponentModel.DataAnnotations.Required]
+
+        public ProdMst ProdMst { get; set; }
+
+        [ForeignKey("GoldKrtMst")]
+        public int GoldType_ID { get; set; } // ID Of Gold Type
+
+        public GoldKrtMst GoldKrtMst { get; set; }
+        
+        [System.ComponentModel.DataAnnotations.Required]
         public int Gold_Wt { get; set; } // Weight Of Gold
 
                 [System.ComponentModel.DataAnnotations.Required]

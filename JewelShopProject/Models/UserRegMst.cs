@@ -10,43 +10,34 @@ namespace JewelShopProject.Models
         public string Username { get; set; }
 
         [Required]
-        [MaxLength]
         public string userFname { get; set; }
 
         [Required]
-        [MaxLength]
         public string userLname { get; set; }
 
         [Required]
-        [MaxLength]
         public string address { get; set; }
 
         [Required]
-        [StringLength(50)]
         public string city { get; set; }
 
         [Required]
-        [StringLength(50)]
         public string state { get; set; }
 
         [Required]
-        [StringLength(50)]
         public string mobNo { get; set; }
 
         [Required]
-        [StringLength(50)]
         public string emailID { get; set; }
 
         [Required]
-        [StringLength(50)]
         public string dob { get; set; }
 
         [Required]
-        [StringLength(50)]
         public string cdate { get; set; }
 
         [Required]
-        [StringLength(50)]
+        [DataType(DataType.Password)]
         public string Password { get; set; }
 
         public string UserRole { get; set; }

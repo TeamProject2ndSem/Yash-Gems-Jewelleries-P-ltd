@@ -16,6 +16,7 @@ namespace JewelShopProject.Controllers
     {
 
         private readonly DbContextJewel db;
+        [Obsolete]
         private readonly Microsoft.AspNetCore.Hosting.IHostingEnvironment environment;
         private readonly ILogger<DimInfoMstsController> logger;
 
@@ -88,7 +89,7 @@ namespace JewelShopProject.Controllers
                 db.DimInfoMst.Add(data);
                 db.SaveChanges();
                 ViewBag.sucess = "Record added";
-                return View("Index");
+                return RedirectToAction("Index");
 
         }
 

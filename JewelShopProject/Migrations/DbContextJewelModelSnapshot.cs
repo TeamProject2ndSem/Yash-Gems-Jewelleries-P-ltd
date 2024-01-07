@@ -220,15 +220,13 @@ namespace JewelShopProject.Migrations
                 {
                     b.Property<int>("GoldType_ID")
                         .ValueGeneratedOnAdd()
-                        .HasMaxLength(10)
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("GoldType_ID"), 1L, 1);
 
                     b.Property<string>("Gold_Crt")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("GoldType_ID");
 
@@ -277,27 +275,27 @@ namespace JewelShopProject.Migrations
 
             modelBuilder.Entity("JewelShopProject.Models.ItemMst", b =>
                 {
-                    b.Property<string>("Style_Code")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Style_Code")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
 
-                    b.Property<string>("Brand_ID")
-                        .IsRequired()
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Style_Code"), 1L, 1);
+
+                    b.Property<int>("BrandMstBrand_ID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Brand_ID")
                         .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
+                        .HasColumnType("int");
 
-                    b.Property<string>("Cat_ID")
-                        .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
+                    b.Property<int>("Cat_ID")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Certify_ID")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Certify_ID")
+                        .HasColumnType("int");
 
-                    b.Property<string>("GoldType_ID")
-                        .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
+                    b.Property<int>("GoldType_ID")
+                        .HasColumnType("int");
 
                     b.Property<string>("Gold_Amt")
                         .IsRequired()
@@ -329,10 +327,8 @@ namespace JewelShopProject.Migrations
                     b.Property<int>("Pairs")
                         .HasColumnType("int");
 
-                    b.Property<string>("Prod_ID")
-                        .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
+                    b.Property<int>("Prod_ID")
+                        .HasColumnType("int");
 
                     b.Property<string>("Prod_Quality")
                         .IsRequired()
@@ -367,6 +363,14 @@ namespace JewelShopProject.Migrations
 
                     b.HasKey("Style_Code");
 
+                    b.HasIndex("BrandMstBrand_ID");
+
+                    b.HasIndex("Cat_ID");
+
+                    b.HasIndex("GoldType_ID");
+
+                    b.HasIndex("Prod_ID");
+
                     b.ToTable("itemMsts");
                 });
 
@@ -374,15 +378,13 @@ namespace JewelShopProject.Migrations
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
-                        .HasMaxLength(10)
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
 
                     b.Property<string>("JewelType")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ID");
 
@@ -399,8 +401,7 @@ namespace JewelShopProject.Migrations
 
                     b.Property<string>("Prod_Type")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Prod_ID");
 
@@ -416,23 +417,22 @@ namespace JewelShopProject.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Style_Code"), 1L, 1);
 
                     b.Property<int>("StoneQlty_ID")
-                        .HasMaxLength(10)
                         .HasColumnType("int");
 
-                    b.Property<decimal>("Stone_Amt")
-                        .HasColumnType("numeric(10,2)");
+                    b.Property<int>("Stone_Amt")
+                        .HasColumnType("int");
 
-                    b.Property<decimal>("Stone_Crt")
-                        .HasColumnType("numeric(10,2)");
+                    b.Property<int>("Stone_Crt")
+                        .HasColumnType("int");
 
-                    b.Property<decimal>("Stone_Gm")
-                        .HasColumnType("numeric(10,2)");
+                    b.Property<int>("Stone_Gm")
+                        .HasColumnType("int");
 
-                    b.Property<decimal>("Stone_Pcs")
-                        .HasColumnType("numeric(10,2)");
+                    b.Property<int>("Stone_Pcs")
+                        .HasColumnType("int");
 
-                    b.Property<decimal>("Stone_Rate")
-                        .HasColumnType("numeric(10,2)");
+                    b.Property<int>("Stone_Rate")
+                        .HasColumnType("int");
 
                     b.HasKey("Style_Code");
 
@@ -451,8 +451,7 @@ namespace JewelShopProject.Migrations
 
                     b.Property<string>("StoneQlty")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("StoneQlty_ID");
 
@@ -469,8 +468,7 @@ namespace JewelShopProject.Migrations
 
                     b.Property<string>("Password")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UserRole")
                         .IsRequired()
@@ -486,33 +484,27 @@ namespace JewelShopProject.Migrations
 
                     b.Property<string>("cdate")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("city")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("dob")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("emailID")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("mobNo")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("state")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("userFname")
                         .IsRequired()
@@ -525,6 +517,41 @@ namespace JewelShopProject.Migrations
                     b.HasKey("userID");
 
                     b.ToTable("userRegMsts");
+                });
+
+            modelBuilder.Entity("JewelShopProject.Models.ItemMst", b =>
+                {
+                    b.HasOne("JewelShopProject.Models.BrandMst", "BrandMst")
+                        .WithMany()
+                        .HasForeignKey("BrandMstBrand_ID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("JewelShopProject.Models.CatMst", "CatMst")
+                        .WithMany()
+                        .HasForeignKey("Cat_ID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("JewelShopProject.Models.GoldKrtMst", "GoldKrtMst")
+                        .WithMany()
+                        .HasForeignKey("GoldType_ID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("JewelShopProject.Models.ProdMst", "ProdMst")
+                        .WithMany()
+                        .HasForeignKey("Prod_ID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("BrandMst");
+
+                    b.Navigation("CatMst");
+
+                    b.Navigation("GoldKrtMst");
+
+                    b.Navigation("ProdMst");
                 });
 
             modelBuilder.Entity("JewelShopProject.Models.StoneMst", b =>

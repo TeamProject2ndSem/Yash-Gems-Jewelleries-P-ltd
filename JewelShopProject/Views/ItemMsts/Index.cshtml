@@ -1,0 +1,155 @@
+﻿@model IEnumerable<JewelShopProject.Models.ItemMst>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Pairs)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Brand_ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CatMst)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prod_Quality)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CertifyMst)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProdMst)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GoldKrtMst)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gold_Wt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Stone_Wt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Net_Gold)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Wstg_Per)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Wstg)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tot_Gross_Wt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gold_Rate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gold_Amt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gold_Making)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Stone_Making)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Other_Making)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tot_Making)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MRP)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pairs)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Brand_ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CatMst.Cat_Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Prod_Quality)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CertifyMst.Certify_Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProdMst.Prod_Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GoldKrtMst.Gold_Crt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gold_Wt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Stone_Wt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Net_Gold)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Wstg_Per)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Wstg)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tot_Gross_Wt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gold_Rate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gold_Amt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gold_Making)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Stone_Making)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Other_Making)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tot_Making)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MRP)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Style_Code">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Style_Code">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Style_Code">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

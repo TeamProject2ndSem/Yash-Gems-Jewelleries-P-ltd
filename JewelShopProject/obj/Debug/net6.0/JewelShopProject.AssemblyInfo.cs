@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("JewelShopProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0492be39f7d9c8ea3c5d0ce371f15cf1ec1ce05")]
 [assembly: System.Reflection.AssemblyProductAttribute("JewelShopProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JewelShopProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

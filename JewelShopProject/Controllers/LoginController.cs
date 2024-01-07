@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using JewelShopProject.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace JewelShopProject.Controllers
 {
@@ -36,16 +37,23 @@ namespace JewelShopProject.Controllers
         // POST: LoginController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(AdminLoginMst adminLoginMst)
         {
-            try
+            var admin = db.adminLoginMsts.Where(x => x.Username==adminLoginMst.Username  && x.Password == adminLoginMst.Password ).FirstOrDefault();
+
+            var user = db.userRegMsts.Where(x=> x.Username == adminLoginMst.Username && x.Password==adminLoginMst.Password).FirstOrDefault();
+            if (admin!= null) 
             {
-                return RedirectToAction(nameof(Index));
+                HttpContext.Session.SetString("Admin", admin.Username);
+                return RedirectToAction("Index");
             }
-            catch
+            if (user != null) 
             {
-                return View();
+                HttpContext.Session.SetString("User", user.Username);
+                return RedirectToAction("Index");
             }
+            else { ViewBag.Message = "Login Failed"; }
+            return View();
         }
 
         // GET: LoginController/Edit/5

@@ -6,9 +6,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using JewelShopProject.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 
 namespace JewelShopProject.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class DimMstsController : Controller
     {
         private readonly DbContextJewel _context;

@@ -10,28 +10,22 @@ namespace JewelShopProject.Models
         public int Style_Code { get; set; }
 
         [ForeignKey("StoneQltyMst")]
-        [StringLength(10)]
         public int StoneQlty_ID { get; set; }
 
         [Required]
-        [Column(TypeName = "numeric(10,2)")]
-        public decimal Stone_Gm { get; set; }
+        public int Stone_Gm { get; set; }
 
         [Required]
-        [Column(TypeName = "numeric(10,2)")]
-        public decimal Stone_Pcs { get; set; }
+        public int Stone_Pcs { get; set; }
 
         [Required]
-        [Column(TypeName = "numeric(10,2)")]
-        public decimal Stone_Crt { get; set; }
+        public int Stone_Crt { get; set; }
 
         [Required]
-        [Column(TypeName = "numeric(10,2)")]
-        public decimal Stone_Rate { get; set; }
+        public int Stone_Rate { get; set; }
 
         [Required]
-        [Column(TypeName = "numeric(10,2)")]
-        public decimal Stone_Amt { get; set; }
+        public int Stone_Amt { get; set; }
 
         // Other properties...
 
