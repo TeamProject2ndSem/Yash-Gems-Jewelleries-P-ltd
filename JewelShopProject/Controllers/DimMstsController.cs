@@ -6,12 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using JewelShopProject.Models;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
 
 namespace JewelShopProject.Controllers
 {
-    [Authorize(Roles = "Admin")]
     public class DimMstsController : Controller
     {
         private readonly DbContextJewel _context;
@@ -24,9 +21,8 @@ namespace JewelShopProject.Controllers
         // GET: DimMsts
         public async Task<IActionResult> Index()
         {
-              return _context.dimMsts != null ? 
-                          View(await _context.dimMsts.ToListAsync()) :
-                          Problem("Entity set 'DbContextJewel.dimMsts'  is null.");
+            var dbContextJewel = _context.dimMsts.Include(d => d.DimQltyMst);
+            return View(await dbContextJewel.ToListAsync());
         }
 
         // GET: DimMsts/Details/5
@@ -38,6 +34,7 @@ namespace JewelShopProject.Controllers
             }
 
             var dimMst = await _context.dimMsts
+                .Include(d => d.DimQltyMst)
                 .FirstOrDefaultAsync(m => m.Style_Code == id);
             if (dimMst == null)
             {
@@ -50,6 +47,7 @@ namespace JewelShopProject.Controllers
         // GET: DimMsts/Create
         public IActionResult Create()
         {
+            ViewData["DimQlty_ID"] = new SelectList(_context.dimQltySubMsts, "DimQltyMst_ID", "DimQlty");
             return View();
         }
 
@@ -58,7 +56,7 @@ namespace JewelShopProject.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Style_Code,DimQlty_ID,DimQltyMst_ID,Dim_Crt,Dim_Pcs,Dim_Gm,Dim_Size,Dim_Rate,Dim_Amt")] DimMst dimMst)
+        public async Task<IActionResult> Create([Bind("Style_Code,DimQlty_ID,Dim_Crt,Dim_Pcs,Dim_Gm,Dim_Size,Dim_Rate,Dim_Amt")] DimMst dimMst)
         {
             if (ModelState.IsValid)
             {
@@ -66,6 +64,7 @@ namespace JewelShopProject.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["DimQlty_ID"] = new SelectList(_context.dimQltySubMsts, "DimQltyMst_ID", "DimQlty", dimMst.DimQlty_ID);
             return View(dimMst);
         }
 
@@ -82,6 +81,7 @@ namespace JewelShopProject.Controllers
             {
                 return NotFound();
             }
+            ViewData["DimQlty_ID"] = new SelectList(_context.dimQltySubMsts, "DimQltyMst_ID", "DimQlty", dimMst.DimQlty_ID);
             return View(dimMst);
         }
 
@@ -90,7 +90,7 @@ namespace JewelShopProject.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Style_Code,DimQlty_ID,DimQltyMst_ID,Dim_Crt,Dim_Pcs,Dim_Gm,Dim_Size,Dim_Rate,Dim_Amt")] DimMst dimMst)
+        public async Task<IActionResult> Edit(int id, [Bind("Style_Code,DimQlty_ID,Dim_Crt,Dim_Pcs,Dim_Gm,Dim_Size,Dim_Rate,Dim_Amt")] DimMst dimMst)
         {
             if (id != dimMst.Style_Code)
             {
@@ -117,6 +117,7 @@ namespace JewelShopProject.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["DimQlty_ID"] = new SelectList(_context.dimQltySubMsts, "DimQltyMst_ID", "DimQlty", dimMst.DimQlty_ID);
             return View(dimMst);
         }
 
@@ -129,6 +130,7 @@ namespace JewelShopProject.Controllers
             }
 
             var dimMst = await _context.dimMsts
+                .Include(d => d.DimQltyMst)
                 .FirstOrDefaultAsync(m => m.Style_Code == id);
             if (dimMst == null)
             {

@@ -1,34 +1,94 @@
 ﻿@model JewelShopProject.Models.CertifyMst
 
-@{
-    ViewData["Title"] = "Edit";
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"] - Edit Certification</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa; /* Light gray */
+            color: #333;
+        }
 
-<h1>Edit</h1>
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
 
-<h4>CertifyMst</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Certify_ID" />
-            <div class="form-group">
-                <label asp-for="Certify_Type" class="control-label"></label>
-                <input asp-for="Certify_Type" class="form-control" />
-                <span asp-validation-for="Certify_Type" class="text-danger"></span>
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #007bff; /* Blue */
+        }
+
+        h4 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        hr {
+            border-color: #dcdcdc;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            background-color: #007bff; /* Blue */
+            border-color: #007bff; /* Blue */
+        }
+
+            .btn-primary:hover {
+                background-color: #0056b3; /* Darker Blue */
+                border-color: #0056b3; /* Darker Blue */
+            }
+
+        .btn {
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+
+        a {
+            color: #007bff; /* Blue */
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Edit</h1>
+        <h4>CertifyMst</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="Certify_ID" />
+                    <div class="form-group">
+                        <label asp-for="Certify_Type" class="control-label"></label>
+                        <input asp-for="Certify_Type" class="form-control" />
+                        <span asp-validation-for="Certify_Type" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Save" class="btn btn-primary" />
+                    </div>
+                </form>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+</body>
+</html>

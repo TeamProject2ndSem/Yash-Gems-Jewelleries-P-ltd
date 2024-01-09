@@ -6,6 +6,5 @@ public class DimQltyMst
     public int DimQltyMst_ID { get; set; }
 
     [Required]
-    [StringLength(50)]
     public string DimQlty { get; set; }
 }

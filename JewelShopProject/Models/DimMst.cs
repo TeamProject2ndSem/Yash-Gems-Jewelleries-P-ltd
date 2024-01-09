@@ -8,36 +8,27 @@ public class DimMst
     public int Style_Code { get; set; }
 
     [ForeignKey("DimQltyMst")]
-    [StringLength(10)]
-    public string DimQlty_ID { get; set; }
-
-    [ForeignKey("DimQltyMst_ID")]
-    [StringLength(10)]
-    public string DimQltyMst_ID { get; set; }
+    public int DimQlty_ID { get; set; }
+  
+    public DimQltyMst DimQltyMst { get; set; }
 
     [Required]
-    [Column(TypeName = "numeric(10,2)")]
-    public decimal Dim_Crt { get; set; }
+    public int Dim_Crt { get; set; }
 
     [Required]
-    [Column(TypeName = "numeric(10,2)")]
-    public decimal Dim_Pcs { get; set; }
+    public int Dim_Pcs { get; set; }
 
     [Required]
-    [Column(TypeName = "numeric(10,2)")]
-    public decimal Dim_Gm { get; set; }
+    public int Dim_Gm { get; set; }
 
     [Required]
-    [Column(TypeName = "numeric(10,2)")]
-    public decimal Dim_Size { get; set; }
+    public int Dim_Size { get; set; }
 
     [Required]
-    [Column(TypeName = "numeric(10,2)")]
-    public decimal Dim_Rate { get; set; }
+    public int Dim_Rate { get; set; }
 
     [Required]
-    [Column(TypeName = "numeric(10,2)")]
-    public decimal Dim_Amt { get; set; }
+    public int Dim_Amt { get; set; }
 
     // Other properties...
 }

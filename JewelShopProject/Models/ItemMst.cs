@@ -15,7 +15,7 @@ namespace JewelShopProject.Models
         public int Pairs { get; set; } // Pairs Of Product
 
         [StringLength(10)]
-        [ForeignKey("Brand")]
+        [ForeignKey("BrandMst")]
         public int Brand_ID { get; set; } // ID Of Particular Brand
 
         public BrandMst BrandMst { get; set; }

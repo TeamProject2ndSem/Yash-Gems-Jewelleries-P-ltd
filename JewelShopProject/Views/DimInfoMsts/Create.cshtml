@@ -4,38 +4,95 @@
     ViewData["Title"] = "Create";
 }
 
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5; /* Light gray */
+        color: #333;
+    }
+
+    h1 {
+        color: #2d2d2d; /* Dark gray */
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    h4 {
+        color: #2d2d2d; /* Dark gray */
+        font-weight: normal;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .row {
+        margin-bottom: 20px;
+    }
+
+    label {
+        color: #2d2d2d; /* Dark gray */
+        font-weight: bold;
+    }
+
+    .form-control {
+        border-color: #D4AF37; /* Gold */
+    }
+
+    .btn-primary {
+        color: #fff;
+        background-color: #D4AF37; /* Gold */
+        border-color: #D4AF37; /* Gold */
+        transition: all 0.3s ease;
+    }
+
+        .btn-primary:hover {
+            background-color: #b38927; /* Darker Gold */
+            border-color: #b38927; /* Darker Gold */
+        }
+
+    a {
+        color: #D4AF37; /* Gold */
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        a:hover {
+            color: #b38927; /* Darker Gold */
+        }
+</style>
+
 <h1>Create</h1>
 
 <h4>DimInfoMst</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <p>@ViewBag.sucess</p>
+        <p class="text-success">@ViewBag.sucess</p>
         <form asp-controller="DimInfoMsts" asp-action="Create" method="post" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
             <div class="form-group">
-                <label asp-for="DimType" class="control-label"></label>
+                <label asp-for="DimType" class="control-label">Diamond Type</label>
                 <input asp-for="DimType" class="form-control" />
                 <span asp-validation-for="DimType" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="DimSubType" class="control-label"></label>
+                <label asp-for="DimSubType" class="control-label">Diamond Sub Type</label>
                 <input asp-for="DimSubType" class="form-control" />
                 <span asp-validation-for="DimSubType" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="DimCrt" class="control-label"></label>
+                <label asp-for="DimCrt" class="control-label">Diamond Carat</label>
                 <input asp-for="DimCrt" class="form-control" />
                 <span asp-validation-for="DimCrt" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="DimPrice" class="control-label"></label>
+                <label asp-for="DimPrice" class="control-label">Diamond Price</label>
                 <input asp-for="DimPrice" class="form-control" />
                 <span asp-validation-for="DimPrice" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <td>Select Image</td>
+                <label class="control-label">Select Image</label>
                 <input type="file" asp-for="DimImgPath" class="form-control" />
             </div>
             <div class="form-group">
@@ -48,6 +105,3 @@
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
-
-
-

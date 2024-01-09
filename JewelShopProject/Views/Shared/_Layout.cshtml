@@ -5,138 +5,268 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewData["Title"] - Luxe Gold Jewelry</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="~/Home/assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="~/Home/assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="~/Home/assets/css/templatemo-hexashop.css">
+
+    <link rel="stylesheet" href="~/Home/assets/css/owl-carousel.css">
+
+    <link rel="stylesheet" href="~/Home/assets/css/lightbox.css">
     <style>
-        /* Your custom styles here */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f8f8f8; /* Light gray background */
+            background-color: #f5f5f5;
             color: #333;
-            margin: 0;
-            padding-bottom: 60px; /* Height of the footer */
+        }
+
+        h1 {
+            color: #2d2d2d; /* Dark gray */
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 30px;
         }
 
         .navbar {
-            background-color: #333; /* Dark gray navbar */
-            border-bottom: 1px solid #333;
-            margin: 0;
-            padding: 0;
+            background-color: #f5f5f5; /* Gold */
+
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: #f5f5f5; /* Dark gray */
+        }
+
+            .navbar-dark .navbar-nav .nav-link:hover {
+                color: #b38927; /* Darker Gold on hover */
+            }
+
+        .navbar-dark .navbar-toggler-icon {
+            background-color: #2d2d2d; /* Dark gray for the navbar toggler */
+        }
+
+        .dropdown-menu {
+            background-color: #f5f5f5; /* Gold for dropdown menu */
+        }
+
+            .dropdown-menu .dropdown-item {
+                color: #2d2d2d; /* Dark gray for dropdown items */
+            }
+
+                .dropdown-menu .dropdown-item:hover {
+                    background-color: #b38927; /* Darker Gold on hover */
+                }
+
+        .footer {
+            background-color: #2d2d2d; /* Darker Gold */
+            color: white; /* White text */
+            padding: 20px 0; /* Adjust padding as needed */
+            position:fixed;
+        }
+
+            /* Optionally add more styling for specific elements within the footer */
+            .footer p {
+                margin-bottom: 0; /* Remove default bottom margin for paragraphs */
+            }
+
+        /* Other styles for the page */
+        .content {
+            /* Add styles for the main content if needed */
+        }
+
+        .nav-link,
+        .dropdown-item,
+        .navbar-brand {
+            transition: color 0.3s ease; /* Smoother transition */
         }
 
         .navbar-brand {
-            color: #D4AF37; /* Gold brand text */
-            font-weight: bold;
-            font-size: 24px;
+            color: #2d2d2d; /* Dark gray for brand */
         }
 
-        .navbar-nav .nav-link {
-            color: #D4AF37; /* Gold nav links */
-        }
-
-            .navbar-nav .nav-link:hover {
-                color: #b38927; /* Lighter gold on hover */
+            .navbar-brand:hover {
+                color: #b38927; /* Darker Gold on brand hover */
             }
-
-        .dropdown-menu {
-            background-color: #333; /* Dark dropdown */
-        }
-
-        .dropdown-item {
-            color: #D4AF37; /* Gold dropdown items */
-        }
-
-            .dropdown-item:hover {
-                background-color: #444; /* Darker background on hover */
-            }
-
-        .footer {
-            background-color: #333; /* Dark footer */
-            color: #D4AF37; /* Gold footer text */
-            text-align: center;
-            padding: 20px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-            <!-- Use container-fluid instead of container -->
-            <a class="navbar-brand" href="#">Luxe Gold Jewelry</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mr-auto">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Yash Gems Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!-- Navigation Links -->
+                <li class="nav-item active">
+                    <a class="nav-link"  asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  asp-controller="Home" asp-action="About">About Us</a>
+                </li>
+                <!-- Dropdown Example -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Category
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <!-- Dropdown Items -->
+                        <a class="dropdown-item" asp-controller="Home" asp-action="Diamond">Diamond Collection</a>
+                        <a class="dropdown-item" asp-controller="Home" asp-action="Gold">Gold Collection</a>
+                        <a class="dropdown-item" asp-controller="Home" asp-action="Stones">Stones Arrival</a>
+                        <!-- Other Dropdown Items -->
+                    </div>
+                </li>
+                <!-- Other Navbar Items -->
+                <li class="nav-item">
+                    <a class="nav-link"  asp-controller="Home" asp-action="Contact">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+                @if (TempData["AdminSession"] != null)
+                {
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Home" asp-action="Index">@TempData["Username"]</a>
+                    </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Categories
+                        <a class="nav-link dropdown-toggle" href="#" id="adminDropdown" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            Management of Collection
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Diamond</a>
-                            <a class="dropdown-item" href="#">Gold</a>
-                            <a class="dropdown-item" href="#">Stones</a>
+                        <div class="dropdown-menu" aria-labelledby="adminDropdown">
+                            <h6 class="dropdown-header">Management of Collection</h6>
+                            <a class="dropdown-item" asp-controller="DimInfoMsts" asp-action="Index">Add Diamond</a>
+                            <a class="dropdown-item" asp-controller="GoldKrtMsts" asp-action="Index">Add Gold</a>
+                            <a class="dropdown-item" asp-controller="StoneMsts" asp-action="Index">Add Stones</a>
+                            <a class="dropdown-item" asp-controller="ItemMsts" asp-action="Index">Add Items</a>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                    <li>
+                        <a class="nav-link" asp-controller="Home" asp-action="Logout">Logout</a>
                     </li>
-                    @if (TempData["AdminSession"] != null)
-                        {
-                    <li class="nav-item">
-                            <a asp-controller="Home" asp-action="Index">@TempData["UserRole"]</a>
+                }
+                else if (ViewBag.UserSession != null)
+                {
+                    <li>
+                        <a class="nav-link" asp-controller="UserRegMsts" asp-action="Details" asp-route-id="@ViewBag.userId">Profile</a>
                     </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <a asp-controller="Home" asp-action="Logout">Logout</a>
+                    <li>
+                        <a class="nav-link" asp-controller="Inquiries" asp-action="Create">Inquiry</a>
+                    </li>
+                }
+                else
+                {
+                    <li>
+                        <a class="nav-link" asp-controller="Home" asp-action="Login">Login</a>
 
+                    </li>
+                    <li>
+                        <a class="nav-link" asp-controller="UserRegMsts" asp-action="Create">Create your account</a>
 
-                    }
-                    else if (ViewBag.UserSession != null)
-                    {
-                        <li class="nav-item">
-                            <a asp-controller="Home" asp-action="Index">@ViewBag.UserRole</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">HomeU</a>
-                        </li>
-                        <li>
-
-                            <a asp-controller="Home" asp-action="Logout">Logout</a>
-                        </li>
-                    }
-                    else
-                    {
-                        <li>
-
-                            <a asp-controller="Home" asp-action="Login">Login</a>
-                        </li>
-                    }
-
-                </ul>
-                <!-- Your conditional login/admin links here -->
-            </div>
+                    </li>
+                }
+            </ul>
         </div>
     </nav>
-
     <div class="container mt-4">
         @* Render the body content *@
         @RenderBody()
     </div>
 
-    <footer class="footer">
+    <!-- ***** Subscribe Area Starts ***** -->
+    <div class="subscribe" style="background-color:lightgray;padding:20px;">
         <div class="container">
-            <p>&copy; 2024 Luxe Gold Jewelry. All Rights Reserved.</p>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="section-heading">
+                        <h2>By Subscribing To Our Newsletter You Can Get 30% Off</h2>
+                        <span>Details to details is what makes Hexashop different from the other themes.</span>
+                    </div>
+                    <form id="subscribe" action="" method="get">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <fieldset>
+                                    <input name="name" type="text" id="name" placeholder="Your Name" required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-5">
+                                <fieldset>
+                                    <input name="email" type="text" id="email" pattern="" placeholder="Your Email Address" required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-2">
+                                <fieldset>
+                                    <button type="submit" id="form-submit" class="main-dark-button"><i class="fa fa-paper-plane"></i></button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-6">
+                            <ul>
+                                <li>Store Location:<br><span>Sunny Isles Beach, FL 33160, United States</span></li>
+                                <li>Phone:<br><span>010-020-0340</span></li>
+                                <li>Office Location:<br><span>North Miami Beach</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                                <li>Work Hours:<br><span>07:30 AM - 9:30 PM Daily</span></li>
+                                <li>Email:<br><span>info@company.com</span></li>
+                                <li>Social Media:<br><span><a href="#">Facebook</a>, <a href="#">Instagram</a>, <a href="#">Behance</a>, <a href="#">Linkedin</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
+    </div>
+    <!-- ***** Subscribe Area Ends ***** -->
+@* 
+    <footer class="footer fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024 JewelShopProject. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-right">
+                    <p>Contact Us: example@example.com</p>
+                </div>
+            </div>
+        </div>
+    </footer> *@
+    <!-- jQuery -->
+    <script src="~/Home/assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="~/Home/assets/js/popper.js"></script>
+    <script src="~/Home/assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="~/Home/assets/js/owl-carousel.js"></script>
+    <script src="~/Home/assets/js/accordions.js"></script>
+    <script src="~/Home/assets/js/datepicker.js"></script>
+    <script src="~/Home/assets/js/scrollreveal.min.js"></script>
+    <script src="~/Home/assets/js/waypoints.min.js"></script>
+    <script src="~/Home/assets/js/jquery.counterup.min.js"></script>
+    <script src="~/Home/assets/js/imgfix.min.js"></script>
+    <script src="~/Home/assets/js/slick.js"></script>
+    <script src="~/Home/assets/js/lightbox.js"></script>
+    <script src="~/Home/assets/js/isotope.js"></script>
+
+    <!-- Global Init -->
+    <script src="~/Home/assets/js/custom.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

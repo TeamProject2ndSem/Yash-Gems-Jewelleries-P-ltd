@@ -13,10 +13,7 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.DimQlty_ID)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DimQltyMst_ID)
+                @Html.DisplayNameFor(model => model.DimQltyMst)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Dim_Crt)
@@ -43,10 +40,7 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.DimQlty_ID)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DimQltyMst_ID)
+                @Html.DisplayFor(modelItem => item.DimQltyMst.DimQlty)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Dim_Crt)

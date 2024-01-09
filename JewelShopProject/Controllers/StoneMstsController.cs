@@ -47,7 +47,6 @@ namespace JewelShopProject.Controllers
         // GET: StoneMsts/Create
         public IActionResult Create()
         {
-
             ViewData["StoneQlty_ID"] = new SelectList(_context.StoneQltyMst, "StoneQlty_ID", "StoneQlty");
             return View();
         }

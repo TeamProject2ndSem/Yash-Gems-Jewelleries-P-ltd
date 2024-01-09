@@ -198,6 +198,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR29sZEtydE1zdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/khanl/source/repos/JewelShopProject/JewelShopProject/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/khanl/source/repos/JewelShopProject/JewelShopProject/Views/Home/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/khanl/source/repos/JewelShopProject/JewelShopProject/Views/Home/Diamond.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEaWFtb25kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/khanl/source/repos/JewelShopProject/JewelShopProject/Views/Home/Gold.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHb2xkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/khanl/source/repos/JewelShopProject/JewelShopProject/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -208,6 +224,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/khanl/source/repos/JewelShopProject/JewelShopProject/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/khanl/source/repos/JewelShopProject/JewelShopProject/Views/Home/Productcshtml.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0Y3NodG1sLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/khanl/source/repos/JewelShopProject/JewelShopProject/Views/Home/Stones.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdG9uZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/khanl/source/repos/JewelShopProject/JewelShopProject/Views/Inquiries/Create.cshtml]
@@ -248,6 +272,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/khanl/source/repos/JewelShopProject/JewelShopProject/Views/ItemMsts/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbU1zdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/khanl/source/repos/JewelShopProject/JewelShopProject/Views/MyOrder/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlPcmRlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/khanl/source/repos/JewelShopProject/JewelShopProject/Views/MyOrder/Payment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlPcmRlclxQYXltZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/khanl/source/repos/JewelShopProject/JewelShopProject/Views/MyOrder/PaymentSuccess.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlPcmRlclxQYXltZW50U3VjY2Vzcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/khanl/source/repos/JewelShopProject/JewelShopProject/Views/ProdMsts/Create.cshtml]

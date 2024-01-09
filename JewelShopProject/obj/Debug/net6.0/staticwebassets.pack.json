@@ -1,32 +1,836 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Content\\Dim\\Dim_35e888fa0298a24815ccc03a358687bd.jpg",
-      "PackagePath": "staticwebassets\\Content\\Dim\\Dim_35e888fa0298a24815ccc03a358687bd.jpg"
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Collection\\assets\\Gold.jpg",
+      "PackagePath": "staticwebassets\\Collection\\assets\\Gold.jpg"
     },
     {
-      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Content\\Dim\\Dim_Codingal_typo_logo.png",
-      "PackagePath": "staticwebassets\\Content\\Dim\\Dim_Codingal_typo_logo.png"
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Collection\\assets\\Gold_2 (1).jpg",
+      "PackagePath": "staticwebassets\\Collection\\assets\\Gold_2 (1).jpg"
     },
     {
-      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Content\\Dim\\Dim_Screenshot (11).png",
-      "PackagePath": "staticwebassets\\Content\\Dim\\Dim_Screenshot (11).png"
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Collection\\assets\\Gold_2 (2).jpg",
+      "PackagePath": "staticwebassets\\Collection\\assets\\Gold_2 (2).jpg"
     },
     {
-      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Content\\Dim\\Dim_Screenshot (6).png",
-      "PackagePath": "staticwebassets\\Content\\Dim\\Dim_Screenshot (6).png"
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Collection\\assets\\Gold_2 (3).jpg",
+      "PackagePath": "staticwebassets\\Collection\\assets\\Gold_2 (3).jpg"
     },
     {
-      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Content\\Dim\\Dim_Screenshot (88).png",
-      "PackagePath": "staticwebassets\\Content\\Dim\\Dim_Screenshot (88).png"
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Collection\\assets\\Gold_2 (4).jpg",
+      "PackagePath": "staticwebassets\\Collection\\assets\\Gold_2 (4).jpg"
     },
     {
-      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Content\\Dim\\Dim_Screenshot (9).png",
-      "PackagePath": "staticwebassets\\Content\\Dim\\Dim_Screenshot (9).png"
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Collection\\assets\\Stone_1.jpg",
+      "PackagePath": "staticwebassets\\Collection\\assets\\Stone_1.jpg"
     },
     {
-      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Content\\Dim\\Dim_jewel.png",
-      "PackagePath": "staticwebassets\\Content\\Dim\\Dim_jewel.png"
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Collection\\assets\\Stone_2.jpg",
+      "PackagePath": "staticwebassets\\Collection\\assets\\Stone_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Collection\\assets\\Stone_3.jpg",
+      "PackagePath": "staticwebassets\\Collection\\assets\\Stone_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Collection\\assets\\Stone_4.jpg",
+      "PackagePath": "staticwebassets\\Collection\\assets\\Stone_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Collection\\assets\\Stone_5.jpg",
+      "PackagePath": "staticwebassets\\Collection\\assets\\Stone_5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Collection\\assets\\Stone_6.jpg",
+      "PackagePath": "staticwebassets\\Collection\\assets\\Stone_6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Collection\\assets\\Stone_7.jpg",
+      "PackagePath": "staticwebassets\\Collection\\assets\\Stone_7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Collection\\assets\\favicon.ico",
+      "PackagePath": "staticwebassets\\Collection\\assets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Collection\\css\\styles.css",
+      "PackagePath": "staticwebassets\\Collection\\css\\styles.css"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Collection\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\Collection\\js\\scripts.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Content\\Dim\\Gold_2 (4).jpg",
+      "PackagePath": "staticwebassets\\Content\\Dim\\Gold_2 (4).jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Content\\Dim\\Stone_1.jpg",
+      "PackagePath": "staticwebassets\\Content\\Dim\\Stone_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\Front\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\css\\flex-slider.css",
+      "PackagePath": "staticwebassets\\Front\\assets\\css\\flex-slider.css"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\Front\\assets\\css\\font-awesome.css"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\css\\lightbox.css",
+      "PackagePath": "staticwebassets\\Front\\assets\\css\\lightbox.css"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\css\\owl-carousel.css",
+      "PackagePath": "staticwebassets\\Front\\assets\\css\\owl-carousel.css"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\css\\templatemo-hexashop.css",
+      "PackagePath": "staticwebassets\\Front\\assets\\css\\templatemo-hexashop.css"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\fonts\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\Front\\assets\\fonts\\Flaticon.woff"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\Front\\assets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\fonts\\flexslider-icon.eot",
+      "PackagePath": "staticwebassets\\Front\\assets\\fonts\\flexslider-icon.eot"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\fonts\\flexslider-icon.svg",
+      "PackagePath": "staticwebassets\\Front\\assets\\fonts\\flexslider-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\fonts\\flexslider-icon.ttf",
+      "PackagePath": "staticwebassets\\Front\\assets\\fonts\\flexslider-icon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\fonts\\flexslider-icon.woff",
+      "PackagePath": "staticwebassets\\Front\\assets\\fonts\\flexslider-icon.woff"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\Front\\assets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\Front\\assets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\Front\\assets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\Front\\assets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\Front\\assets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\fonts\\slick.eot",
+      "PackagePath": "staticwebassets\\Front\\assets\\fonts\\slick.eot"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\fonts\\slick.svg",
+      "PackagePath": "staticwebassets\\Front\\assets\\fonts\\slick.svg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\fonts\\slick.ttf",
+      "PackagePath": "staticwebassets\\Front\\assets\\fonts\\slick.ttf"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\fonts\\slick.woff",
+      "PackagePath": "staticwebassets\\Front\\assets\\fonts\\slick.woff"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\1.jfif",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\1.jfif"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\2.jfif",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\2.jfif"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\2094561.eps",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\2094561.eps"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\2094562.ai",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\2094562.ai"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\2094563.jpg",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\2094563.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\2110709.ai",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\2110709.ai"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\2110710.eps",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\2110710.eps"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\2110711.jpg",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\2110711.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\3.jfif",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\3.jfif"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\3.jpg",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\4.jfif",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\4.jfif"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\4.jpg",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\4995979.ai",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\4995979.ai"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\4995983.eps",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\4995983.eps"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\4995984.jpg",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\4995984.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\6.jpg",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\63995.eps",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\63995.eps"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\63995.jpg",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\63995.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\8.jpg",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\9.jpg",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\9464359.psd",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\9464359.psd"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\Fonts.txt",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\Fonts.txt"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\License free.txt",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\License free.txt"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\License premium.txt",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\License premium.txt"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\Ring-slider-2.jpg",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\Ring-slider-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\about-left-image.jpg",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\about-left-image.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\about-us-page-heading.jpg",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\about-us-page-heading.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\baner-right-image-01.jpg",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\baner-right-image-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\baner-right-image-02.jpg",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\baner-right-image-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\baner-right-image-03.jpg",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\baner-right-image-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\baner-right-image-04.jpg",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\baner-right-image-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\close.png",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\close.png"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\explore-image-01.jpg",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\explore-image-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\explore-image-02.jpg",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\explore-image-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\front-view-forklift-letters-black-background.jpg",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\front-view-forklift-letters-black-background.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\loading.gif",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\loading.gif"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\logo.png",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\necklace-slider-3.jpg",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\necklace-slider-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\next.png",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\next.png"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\prev.png",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\prev.png"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\products-page-heading.jpg",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\products-page-heading.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\sabrianna-q_sPpAv0MXE-unsplash.jpg",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\sabrianna-q_sPpAv0MXE-unsplash.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\shiny-gold.jpg",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\shiny-gold.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\shopping-woman-holding-sale-sign-while-sitting-table.jpg",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\shopping-woman-holding-sale-sign-while-sitting-table.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\women-02.jpg",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\women-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\images\\women-03.jpg",
+      "PackagePath": "staticwebassets\\Front\\assets\\images\\women-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\js\\accordions.js",
+      "PackagePath": "staticwebassets\\Front\\assets\\js\\accordions.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\Front\\assets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\js\\custom.js",
+      "PackagePath": "staticwebassets\\Front\\assets\\js\\custom.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\js\\datepicker.js",
+      "PackagePath": "staticwebassets\\Front\\assets\\js\\datepicker.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\js\\imgfix.min.js",
+      "PackagePath": "staticwebassets\\Front\\assets\\js\\imgfix.min.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\js\\isotope.js",
+      "PackagePath": "staticwebassets\\Front\\assets\\js\\isotope.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\js\\jquery-2.1.0.min.js",
+      "PackagePath": "staticwebassets\\Front\\assets\\js\\jquery-2.1.0.min.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\js\\jquery.counterup.min.js",
+      "PackagePath": "staticwebassets\\Front\\assets\\js\\jquery.counterup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\js\\lightbox.js",
+      "PackagePath": "staticwebassets\\Front\\assets\\js\\lightbox.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\js\\owl-carousel.js",
+      "PackagePath": "staticwebassets\\Front\\assets\\js\\owl-carousel.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\js\\popper.js",
+      "PackagePath": "staticwebassets\\Front\\assets\\js\\popper.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\js\\quantity.js",
+      "PackagePath": "staticwebassets\\Front\\assets\\js\\quantity.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\js\\scrollreveal.min.js",
+      "PackagePath": "staticwebassets\\Front\\assets\\js\\scrollreveal.min.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\js\\slick.js",
+      "PackagePath": "staticwebassets\\Front\\assets\\js\\slick.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Front\\assets\\js\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\Front\\assets\\js\\waypoints.min.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\Home\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\css\\flex-slider.css",
+      "PackagePath": "staticwebassets\\Home\\assets\\css\\flex-slider.css"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\Home\\assets\\css\\font-awesome.css"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\css\\lightbox.css",
+      "PackagePath": "staticwebassets\\Home\\assets\\css\\lightbox.css"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\css\\owl-carousel.css",
+      "PackagePath": "staticwebassets\\Home\\assets\\css\\owl-carousel.css"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\css\\templatemo-hexashop.css",
+      "PackagePath": "staticwebassets\\Home\\assets\\css\\templatemo-hexashop.css"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\images\\dia.jpg",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\dia.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\images\\dia2.jpg",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\dia2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\images\\dia3.jpg",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\dia3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\images\\fonts\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\fonts\\Flaticon.woff"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\images\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\images\\fonts\\flexslider-icon.eot",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\fonts\\flexslider-icon.eot"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\images\\fonts\\flexslider-icon.svg",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\fonts\\flexslider-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\images\\fonts\\flexslider-icon.ttf",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\fonts\\flexslider-icon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\images\\fonts\\flexslider-icon.woff",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\fonts\\flexslider-icon.woff"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\images\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\images\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\images\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\images\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\images\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\images\\fonts\\slick.eot",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\fonts\\slick.eot"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\images\\fonts\\slick.svg",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\fonts\\slick.svg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\images\\fonts\\slick.ttf",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\fonts\\slick.ttf"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\images\\fonts\\slick.woff",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\fonts\\slick.woff"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\images\\gold pic.jpg",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\gold pic.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\images\\gold.jpg",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\gold.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\images\\gold2.jpg",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\gold2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\images\\next.png",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\next.png"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\images\\prev.png",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\prev.png"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\images\\ser1.jpg",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\ser1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\images\\ser2.jpg",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\ser2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\images\\ser3.jpg",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\ser3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\js\\accordions.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\accordions.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\js\\custom.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\custom.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\js\\datepicker.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\datepicker.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\js\\imgfix.min.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\imgfix.min.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\js\\isotope.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\isotope.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\js\\jquery-2.1.0.min.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\jquery-2.1.0.min.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\js\\jquery.counterup.min.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\jquery.counterup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\js\\lightbox.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\lightbox.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\js\\owl-carousel.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\owl-carousel.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\js\\popper.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\popper.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\js\\quantity.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\quantity.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\js\\scrollreveal.min.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\scrollreveal.min.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\js\\slick.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\slick.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Home\\assets\\js\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\waypoints.min.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\css\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\Index\\css\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\Index\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\css\\style.css",
+      "PackagePath": "staticwebassets\\Index\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\css\\vendor.css",
+      "PackagePath": "staticwebassets\\Index\\css\\vendor.css"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\banner-image.png",
+      "PackagePath": "staticwebassets\\Index\\images\\banner-image.png"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\cart-item1.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\cart-item1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\cart-item2.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\cart-item2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\commentor-item1.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\commentor-item1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\commentor-item2.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\commentor-item2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\commentor-item3.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\commentor-item3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\dhl.png",
+      "PackagePath": "staticwebassets\\Index\\images\\dhl.png"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\insta-item1.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\insta-item1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\insta-item2.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\insta-item2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\insta-item3.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\insta-item3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\insta-item4.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\insta-item4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\insta-item5.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\insta-item5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\main-logo.png",
+      "PackagePath": "staticwebassets\\Index\\images\\main-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\mastercard.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\mastercard.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\paypal.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\paypal.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\post-image.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\post-image.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\post-image1.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\post-image1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\post-item1.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\post-item1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\post-item2.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\post-item2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\post-item3.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\post-item3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\post-item4.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\post-item4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\post-item5.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\post-item5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\post-item6.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\post-item6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\post-item7.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\post-item7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\post-item8.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\post-item8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\post-item9.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\post-item9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\post-small-image1.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\post-small-image1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\post-small-image2.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\post-small-image2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\post-small-image3.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\post-small-image3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\product-item1.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\product-item1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\product-item10.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\product-item10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\product-item2.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\product-item2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\product-item3.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\product-item3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\product-item4.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\product-item4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\product-item5.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\product-item5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\product-item6.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\product-item6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\product-item7.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\product-item7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\product-item8.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\product-item8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\product-item9.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\product-item9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\review-item1.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\review-item1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\review-item2.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\review-item2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\search-icon.png",
+      "PackagePath": "staticwebassets\\Index\\images\\search-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\shippingcard.png",
+      "PackagePath": "staticwebassets\\Index\\images\\shippingcard.png"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\singel-product-item.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\singel-product-item.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\single-image1.png",
+      "PackagePath": "staticwebassets\\Index\\images\\single-image1.png"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\single-image2.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\single-image2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\single-image3.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\single-image3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\single-post.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\single-post.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\images\\visa.jpg",
+      "PackagePath": "staticwebassets\\Index\\images\\visa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\js\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\Index\\js\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\Index\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\js\\jquery-1.11.0.min.js",
+      "PackagePath": "staticwebassets\\Index\\js\\jquery-1.11.0.min.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\js\\modernizr.js",
+      "PackagePath": "staticwebassets\\Index\\js\\modernizr.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\js\\plugins.js",
+      "PackagePath": "staticwebassets\\Index\\js\\plugins.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Index\\js\\script.js",
+      "PackagePath": "staticwebassets\\Index\\js\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Pages\\assets\\favicon.ico",
+      "PackagePath": "staticwebassets\\Pages\\assets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Pages\\css\\styles.css",
+      "PackagePath": "staticwebassets\\Pages\\css\\styles.css"
+    },
+    {
+      "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Pages\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\Pages\\js\\scripts.js"
     },
     {
       "Id": "C:\\Users\\khanl\\source\\repos\\JewelShopProject\\JewelShopProject\\wwwroot\\Theme\\assets\\favicon.ico",

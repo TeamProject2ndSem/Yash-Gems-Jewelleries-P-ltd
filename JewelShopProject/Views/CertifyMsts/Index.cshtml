@@ -1,35 +1,107 @@
 ﻿@model IEnumerable<JewelShopProject.Models.CertifyMst>
 
-@{
-    ViewData["Title"] = "Index";
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"] - Certification List</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa; /* Light gray */
+            color: #333;
+        }
 
-<h1>Index</h1>
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Certify_Type)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Certify_Type)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Certify_ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Certify_ID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Certify_ID">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #007bff; /* Blue */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #f7f7f7;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .btn {
+            color: #fff;
+            background-color: #007bff; /* Blue */
+            border-color: #007bff; /* Blue */
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+            .btn:hover {
+                background-color: #0056b3; /* Darker Blue */
+                border-color: #0056b3; /* Darker Blue */
+            }
+
+        a {
+            color: #007bff; /* Blue */
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Certification List</h1>
+        <p>
+            <a asp-action="Create" class="btn btn-primary">Create New</a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Certify_Type)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Certify_Type)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.Certify_ID" class="btn btn-primary">Edit</a> |
+                            <a asp-action="Details" asp-route-id="@item.Certify_ID" class="btn btn-info">Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.Certify_ID" class="btn btn-danger">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -12,6 +12,8 @@ namespace JewelShopProject.Models
         [ForeignKey("StoneQltyMst")]
         public int StoneQlty_ID { get; set; }
 
+        public StoneQltyMst stoneQltyMst { get; set; }
+
         [Required]
         public int Stone_Gm { get; set; }
 

@@ -12,9 +12,7 @@ namespace JewelShopProject.Models
         [StringLength(50)]
         public string DimType { get; set; }
 
-        [Required]
-        [StringLength(50)]
-        public string DimSubType { get; set; }
+       
 
         [Required]
         [StringLength(50)]

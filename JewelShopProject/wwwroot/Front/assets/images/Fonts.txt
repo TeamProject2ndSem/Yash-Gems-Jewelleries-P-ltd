@@ -1,0 +1,9 @@
+Fonts used in this design:
+
+Font: Great Vibes
+Author: TypeSETit
+Url: http://www.fontsquirrel.com/fonts/great-vibes
+
+Font: Acre
+Author: Jonathan Ball
+Url: https://www.fontsquirrel.com/fonts/acre

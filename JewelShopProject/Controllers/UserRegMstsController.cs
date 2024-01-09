@@ -61,7 +61,7 @@ namespace JewelShopProject.Controllers
             {
                 _context.Add(userRegMst);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Login),controllerName:"Home");
             }
             return View(userRegMst);
         }

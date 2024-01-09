@@ -12,7 +12,6 @@
             font-family: Arial, sans-serif;
             background-color: #f5f5f5; /* Light gray */
             color: #333;
-            margin: 20px;
         }
 
         h1 {
@@ -48,39 +47,44 @@
     </style>
 </head>
 <body>
- 
+
     <div class="container">
         <h1>Details</h1>
         <div>
             <h4>AdminLoginMst</h4>
             <hr />
             <dl class="row">
-                <dt class="col-sm-2">
+                <dt class="col-sm-2" style="color: #2d2d2d;">
+                    <!-- Dark gray -->
                     @Html.DisplayNameFor(model => model.Username)
                 </dt>
-                <dd class="col-sm-10">
+                <dd class="col-sm-10" style="color: #333;">
+                    <!-- Darker gray -->
                     @Html.DisplayFor(model => model.Username)
                 </dd>
-                <dt class="col-sm-2">
+                <dt class="col-sm-2" style="color: #2d2d2d;">
+                    <!-- Dark gray -->
                     @Html.DisplayNameFor(model => model.Password)
                 </dt>
-                <dd class="col-sm-10">
+                <dd class="col-sm-10" style="color: #333;">
+                    <!-- Darker gray -->
                     @Html.DisplayFor(model => model.Password)
                 </dd>
-                <dt class="col-sm-2">
+                <dt class="col-sm-2" style="color: #2d2d2d;">
+                    <!-- Dark gray -->
                     @Html.DisplayNameFor(model => model.UserRole)
                 </dt>
-                <dd class="col-sm-10">
+                <dd class="col-sm-10" style="color: #333;">
+                    <!-- Darker gray -->
                     @Html.DisplayFor(model => model.UserRole)
                 </dd>
             </dl>
         </div>
         <div>
-            <a asp-action="Edit" asp-route-id="@Model?.AdId">Edit</a> |
-            <a asp-action="Index">Back to List</a>
+            <a asp-action="Edit" asp-route-id="@Model?.AdId" style="color: #D4AF37;">Edit</a> | <!-- Gold -->
+            <a asp-action="Index" style="color: #D4AF37;">Back to List</a> <!-- Gold -->
         </div>
     </div>
-
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>

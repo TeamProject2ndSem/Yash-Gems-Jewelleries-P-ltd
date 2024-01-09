@@ -21,7 +21,7 @@ namespace JewelShopProject.Controllers
         // GET: ItemMsts
         public async Task<IActionResult> Index()
         {
-            var dbContextJewel = _context.itemMsts.Include(i => i.CatMst).Include(i => i.CertifyMst).Include(i => i.GoldKrtMst).Include(i => i.ProdMst);
+            var dbContextJewel = _context.itemMsts.Include(i => i.BrandMst).Include(i => i.CatMst).Include(i => i.CertifyMst).Include(i => i.GoldKrtMst).Include(i => i.ProdMst);
             return View(await dbContextJewel.ToListAsync());
         }
 
@@ -34,6 +34,7 @@ namespace JewelShopProject.Controllers
             }
 
             var itemMst = await _context.itemMsts
+                .Include(i => i.BrandMst)
                 .Include(i => i.CatMst)
                 .Include(i => i.CertifyMst)
                 .Include(i => i.GoldKrtMst)
@@ -50,6 +51,7 @@ namespace JewelShopProject.Controllers
         // GET: ItemMsts/Create
         public IActionResult Create()
         {
+            ViewData["Brand_ID"] = new SelectList(_context.BrandMst, "Brand_ID", "Brand_Type");
             ViewData["Cat_ID"] = new SelectList(_context.catMsts, "Cat_ID", "Cat_Name");
             ViewData["Certify_ID"] = new SelectList(_context.certifyMsts, "Certify_ID", "Certify_Type");
             ViewData["GoldType_ID"] = new SelectList(_context.goldKrtMsts, "GoldType_ID", "Gold_Crt");
@@ -70,6 +72,7 @@ namespace JewelShopProject.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["Brand_ID"] = new SelectList(_context.BrandMst, "Brand_ID", "Brand_Type", itemMst.Brand_ID);
             ViewData["Cat_ID"] = new SelectList(_context.catMsts, "Cat_ID", "Cat_Name", itemMst.Cat_ID);
             ViewData["Certify_ID"] = new SelectList(_context.certifyMsts, "Certify_ID", "Certify_Type", itemMst.Certify_ID);
             ViewData["GoldType_ID"] = new SelectList(_context.goldKrtMsts, "GoldType_ID", "Gold_Crt", itemMst.GoldType_ID);
@@ -90,6 +93,7 @@ namespace JewelShopProject.Controllers
             {
                 return NotFound();
             }
+            ViewData["Brand_ID"] = new SelectList(_context.BrandMst, "Brand_ID", "Brand_Type", itemMst.Brand_ID);
             ViewData["Cat_ID"] = new SelectList(_context.catMsts, "Cat_ID", "Cat_Name", itemMst.Cat_ID);
             ViewData["Certify_ID"] = new SelectList(_context.certifyMsts, "Certify_ID", "Certify_Type", itemMst.Certify_ID);
             ViewData["GoldType_ID"] = new SelectList(_context.goldKrtMsts, "GoldType_ID", "Gold_Crt", itemMst.GoldType_ID);
@@ -129,6 +133,7 @@ namespace JewelShopProject.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["Brand_ID"] = new SelectList(_context.BrandMst, "Brand_ID", "Brand_Type", itemMst.Brand_ID);
             ViewData["Cat_ID"] = new SelectList(_context.catMsts, "Cat_ID", "Cat_Name", itemMst.Cat_ID);
             ViewData["Certify_ID"] = new SelectList(_context.certifyMsts, "Certify_ID", "Certify_Type", itemMst.Certify_ID);
             ViewData["GoldType_ID"] = new SelectList(_context.goldKrtMsts, "GoldType_ID", "Gold_Crt", itemMst.GoldType_ID);
@@ -145,6 +150,7 @@ namespace JewelShopProject.Controllers
             }
 
             var itemMst = await _context.itemMsts
+                .Include(i => i.BrandMst)
                 .Include(i => i.CatMst)
                 .Include(i => i.CertifyMst)
                 .Include(i => i.GoldKrtMst)

@@ -80,7 +80,6 @@ namespace JewelShopProject.Controllers
                 var data = new DimInfoMst()
                 {
                     DimType = model.DimType,
-                    DimSubType = model.DimSubType,
                     DimCrt = model.DimCrt,
                     DimPrice = model.DimPrice,
                     DimImgPath = filename,

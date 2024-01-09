@@ -30,35 +30,30 @@ namespace JewelShopProject.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Style_Code"), 1L, 1);
 
-                    b.Property<string>("DimQltyMst_ID")
-                        .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
+                    b.Property<int>("DimQlty_ID")
+                        .HasColumnType("int");
 
-                    b.Property<string>("DimQlty_ID")
-                        .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
+                    b.Property<int>("Dim_Amt")
+                        .HasColumnType("int");
 
-                    b.Property<decimal>("Dim_Amt")
-                        .HasColumnType("numeric(10,2)");
+                    b.Property<int>("Dim_Crt")
+                        .HasColumnType("int");
 
-                    b.Property<decimal>("Dim_Crt")
-                        .HasColumnType("numeric(10,2)");
+                    b.Property<int>("Dim_Gm")
+                        .HasColumnType("int");
 
-                    b.Property<decimal>("Dim_Gm")
-                        .HasColumnType("numeric(10,2)");
+                    b.Property<int>("Dim_Pcs")
+                        .HasColumnType("int");
 
-                    b.Property<decimal>("Dim_Pcs")
-                        .HasColumnType("numeric(10,2)");
+                    b.Property<int>("Dim_Rate")
+                        .HasColumnType("int");
 
-                    b.Property<decimal>("Dim_Rate")
-                        .HasColumnType("numeric(10,2)");
-
-                    b.Property<decimal>("Dim_Size")
-                        .HasColumnType("numeric(10,2)");
+                    b.Property<int>("Dim_Size")
+                        .HasColumnType("int");
 
                     b.HasKey("Style_Code");
+
+                    b.HasIndex("DimQlty_ID");
 
                     b.ToTable("dimMsts");
                 });
@@ -73,8 +68,7 @@ namespace JewelShopProject.Migrations
 
                     b.Property<string>("DimQlty")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("DimQltyMst_ID");
 
@@ -367,6 +361,8 @@ namespace JewelShopProject.Migrations
 
                     b.HasIndex("Cat_ID");
 
+                    b.HasIndex("Certify_ID");
+
                     b.HasIndex("GoldType_ID");
 
                     b.HasIndex("Prod_ID");
@@ -389,6 +385,27 @@ namespace JewelShopProject.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("jewelTypeMsts");
+                });
+
+            modelBuilder.Entity("JewelShopProject.Models.Login", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Login");
                 });
 
             modelBuilder.Entity("JewelShopProject.Models.ProdMst", b =>
@@ -519,6 +536,17 @@ namespace JewelShopProject.Migrations
                     b.ToTable("userRegMsts");
                 });
 
+            modelBuilder.Entity("DimMst", b =>
+                {
+                    b.HasOne("DimQltyMst", "DimQltyMst")
+                        .WithMany()
+                        .HasForeignKey("DimQlty_ID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("DimQltyMst");
+                });
+
             modelBuilder.Entity("JewelShopProject.Models.ItemMst", b =>
                 {
                     b.HasOne("JewelShopProject.Models.BrandMst", "BrandMst")
@@ -530,6 +558,12 @@ namespace JewelShopProject.Migrations
                     b.HasOne("JewelShopProject.Models.CatMst", "CatMst")
                         .WithMany()
                         .HasForeignKey("Cat_ID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("JewelShopProject.Models.CertifyMst", "CertifyMst")
+                        .WithMany()
+                        .HasForeignKey("Certify_ID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -548,6 +582,8 @@ namespace JewelShopProject.Migrations
                     b.Navigation("BrandMst");
 
                     b.Navigation("CatMst");
+
+                    b.Navigation("CertifyMst");
 
                     b.Navigation("GoldKrtMst");
 

@@ -21,7 +21,6 @@
             font-family: Arial, sans-serif;
             background-color: #f5f5f5; /* Light gray */
             color: #333;
-            margin: 20px;
         }
 
         h1 {
@@ -80,18 +79,19 @@
     </style>
 </head>
 <body>
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+    <p >
+        <a style="padding:20px" asp-controller="CatMsts" asp-action="Index">Add New Category</a>
+        <a style="padding:20px" asp-controller="BrandMsts" asp-action="Index">Add New Brand</a>
+        <a style="padding:20px" asp-action="Create">Create New</a>
+    </p>
+  
 <table class="table">
     <thead>
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.DimType)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DimSubType)
-            </th>
+           
             <th>
                 @Html.DisplayNameFor(model => model.DimCrt)
             </th>
@@ -110,9 +110,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.DimType)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DimSubType)
-            </td>
+          
             <td>
                 @Html.DisplayFor(modelItem => item.DimCrt)
             </td>

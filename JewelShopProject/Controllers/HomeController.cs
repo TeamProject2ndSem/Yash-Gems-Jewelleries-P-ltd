@@ -16,39 +16,24 @@ namespace JewelShopProject.Controllers
             this.db = db;
         }
 
-        //public IActionResult Index()
-        //{
-        //    if (HttpContext.Session.GetString("Admin") != null) 
-        //    {
-        //        ViewBag.Adminsession = HttpContext.Session.GetString("Admin").ToString();
-
-        //    }
-        //    else if (HttpContext.Session.GetString("User") != null)
-        //    {
-        //        ViewBag.Usersession = HttpContext.Session.GetString("User").ToString();
-        //    }
-        //    else
-        //    {
-        //        return RedirectToAction("Login");
-        //    }
-
-        //    return View();
-        //}
         public IActionResult Index()
         {
 
             if (HttpContext.Session.GetString("AdminName") != null)
             {
-                string adminSession = HttpContext.Session.GetString("AdminName").ToString();
-
+                int? adminId = HttpContext.Session.GetInt32("AdminId");
+                string adminSession = HttpContext.Session.GetString("AdminName").ToString(); 
+               
                 TempData["AdminSession"] = adminSession;
                 TempData["UserRole"] = "Admin";
-            TempData["Username"] = adminSession;
+                TempData["Username"] = adminSession;
             }
             else if (HttpContext.Session.GetString("UserName") !=null)
             {
+                int? userId = HttpContext.Session.GetInt32("UserId");
                 string userSession = HttpContext.Session.GetString("UserName").ToString();
 
+                ViewBag.userId = userId;
                 ViewBag.UserSession = userSession;
                 ViewBag.UserRole = "User";
                 ViewBag.Username = userSession;
@@ -102,22 +87,7 @@ namespace JewelShopProject.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Login(Login login)
         {
-            //var admin = db.adminLoginMsts.Where(x => x.Username == login.Username && x.Password == login.Password).FirstOrDefault();
-
-            //var user = db.userRegMsts.Where(x => x.Username == login.Username && x.Password == login.Password).FirstOrDefault();
-            //if (admin != null)
-            //{
-
-            //    HttpContext.Session.SetString("Admin", admin.Username);
-            //    return RedirectToAction("Index");
-            //}
-            //if (user != null)
-            //{
-            //    HttpContext.Session.SetString("User", user.Username);
-            //    return RedirectToAction("Index");
-            //}
-            //else { ViewBag.Message = "Login Failed"; }
-            //return View();
+          
            
                 var admin = db.adminLoginMsts.Where(x => x.Username == login.Username && x.Password == login.Password).FirstOrDefault();
 
@@ -126,13 +96,15 @@ namespace JewelShopProject.Controllers
                 {
                     HttpContext.Session.SetString("UserRole", "Admin");
                     HttpContext.Session.SetString("AdminName", admin.Username);
-                    return RedirectToAction("Index");
+                    HttpContext.Session.SetInt32("AdminId", admin.AdId); // Storing the ID in session
+                return RedirectToAction("Index");
                 }
                 if (user != null)
                 {
                     HttpContext.Session.SetString("UserRole", "User");
                     HttpContext.Session.SetString("UserName", user.Username);
-                    return RedirectToAction("Index");
+                HttpContext.Session.SetInt32("UserId", user.userID); // Storing the ID in session
+                return RedirectToAction("Index");
                 }
                 else
                 {
@@ -140,7 +112,30 @@ namespace JewelShopProject.Controllers
                     return View();
                 }
             }
+        public ActionResult About()
+        {
+            return View();
+        }
+        public ActionResult Contact()
+        {
+            return View();
+        }
+        public ActionResult Product()
+        {
+            return View();
+        }
+        public ActionResult Diamond()
+        {
+            return View();
+        }
+        public ActionResult Gold()
+        {
+            return View();
+        }
+        public ActionResult Stones()
+        {
+            return View();
+        }
 
-        
     }
 }

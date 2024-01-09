@@ -4,16 +4,55 @@
     ViewData["Title"] = "Details";
 }
 
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+    }
+
+    h1 {
+        color: #2d2d2d;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    h4 {
+        color: #2d2d2d;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    dl.row {
+        margin-bottom: 15px;
+    }
+
+    dt.col-sm-2 {
+        font-weight: bold;
+    }
+
+    a {
+        color: #D4AF37;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        a:hover {
+            color: #b38927;
+        }
+</style>
+
 <h1>Details</h1>
 
 <div>
     <h4>BrandMst</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Brand_Type)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Brand_Type)
         </dd>
     </dl>

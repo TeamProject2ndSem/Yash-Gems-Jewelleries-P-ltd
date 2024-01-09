@@ -21,6 +21,9 @@ namespace JewelShopProject.Models
         {
             // Set default value for UserRole
             UserRole = "Admin";
+            Username = "Demo";
+            Password = "123";
+
         }
     }
 }
